@@ -1,0 +1,19 @@
+{
+    "_comment": "For left (forward) wall",
+    "weld_length": 900.0,
+    "safe_height": 30.0,
+    "weld_speed": 5.0,
+    "outer_corner_delta_v": -1.0,
+    "inner_corner_delta_v": 1.0,
+    "between_corner_delta_v": 1.0,
+    "welding_angle_wrt_y": [0, 60, 15.0],
+    "actions": [
+        [-12.0, -1.0, 20],
+        [-12.0, -5.0, 0],
+        [-4.0, -3.0, 20],
+        [-4.0, -9.0, 10],
+        [2.0, 0.0, 0],
+        [2.0, -7.0, 0],
+        [2.0, -12.0, 0]
+    ]
+}
