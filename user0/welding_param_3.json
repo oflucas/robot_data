@@ -2,7 +2,7 @@
     "_comment": "For left (forward) wall, inner corner depth 880, outer corner distance 660, far side extension 200",
     "weld_length": 900.0,
     "safe_height": 30.0,
-    "weld_speed": 5.0,
+    "weld_speed": 10.0,
     "outer_corner_delta_v": -1.0,
     "inner_corner_delta_v": 1.0,
     "between_corner_delta_v": 1.0,
