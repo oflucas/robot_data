@@ -1,0 +1,23 @@
+vision_settings:
+  V_SHAPE_BOTTOM: 1 # special 23-1 mode with opener in the bottom.
+  V_SHAPE_SURFACE: 2
+  STEP_RIGHT_H_OUTPUT_H: 3 # Right high, 13-1 mode, output higher side
+  STEP_RIGHT_H_OUTPUT_L: 4 # Right high, 13-1 mode, output Lower side
+  STEP_RIGHT_H_OUTPUT_L_FAR: 5 # Right high, 13-1 mode, output Lower side, more left by 10mm.
+  STEP_RIGHT_H_OUTPUT_L_FAR_OFFSET: 10.0
+  T_SHAPE_LOW_CENTER_AND_W: 6
+  T_SHAPE_LOW_R: 7
+  T_SHAPE_HIGH_L: 8
+  T_SHAPE_HIGH_R: 9
+  STEP_LEFT_H_OUTPUT_L: 10 # Left high, 3-1 mode, output lower side
+  STEP_LEFT_H_OUTPUT_H: 11 # Left high, 13-1 mode, output higher side
+  STEP_LEFT_H_OUTPUT_H_FAR: 12 # Left high, 13-1 mode, output higher side, more left by 10mm (100 param).
+  STEP_LEFT_H_OUTPUT_H_FAR_OFFSET: 10.0
+  # Right high, 2-6 mode, exposure=11->18, capability=6, feature value limit=102
+  STEP_RIGHT_H_OUTPUT_H2: 13 # Right high, 2-6 mode, output higher side
+  STEP_RIGHT_H_OUTPUT_L2: 14 # Right high, 2-6 mode, output Lower side
+  STEP_RIGHT_H_OUTPUT_H_FAR2: 15 # Right high, 2-6 mode, output higher side, more right by 10mm
+  STEP_RIGHT_H_OUTPUT_H_FAR_OFFSET2: 10.0
+  V_SHAPE_BOTTOM2: 16 # v shape, lowest point, 17-1, exposure=11, capability=6, output z is to the right of 'green line'.
+  V_SHAPE_BOTTOM2_FAR: 17 # same as 16, output more right by 10mm
+  V_SHAPE_BOTTOM2_FAR_OFFSET: 10

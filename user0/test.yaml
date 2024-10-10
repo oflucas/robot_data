@@ -1,0 +1,34 @@
+doe: "a deer, a female deer"
+ray: "a drop of golden sun"
+pi: 3.14159
+xmas: true
+french-hens: 3
+calling-birds:
+  - huey
+  - dewey
+  - louie
+  - fred
+xmas-fifth-day:
+  calling-birds: four
+  french-hens: 3
+  golden-rings: 5
+  partridges:
+    count: 1
+    location: "a pear tree"
+  turtle-doves: two
+# For right (backward) wall, inner corner depth 880, outer corner distance 660, far side extension 200
+weld_length: 900.0
+safe_height: 30.0
+welding_angle_wrt_y: [-101, 30, 15.0]
+actions:
+  - [-12.0, 4.0, 25,    4.0, 4, 7.5, 4, 4.0] # 1
+  - [-12.0, -1.0, 0,    4.0, 4, 7.5, 4, 4.0] # 2
+  # 3
+  - [-4.0, 3.0, 25,     4.0, 4, 7.5, 3.5, 4.0]
+  - [-6.0, -2.0, 10,    4.0, 4, 7.5, 3.5, 4.0]
+  - [0.0, 5.0, 0,       5.0, 5, 5.0, 4, 5.0]
+  - [0.0, 0.0, 0,       5.0, 5, 5.0, 4, 5.0]
+  - [0.0, -4.0, 0,      5.0, 5, 5.0, 4, 5.0]
+  - [0.0, -9.0, 0,      5.0, 5, 5.0, 4, 5.0]
+  - [0.0, -15.0, 0,     5.0, 5, 5.0, 4, 5.0]
+  - [0.0, -20.0, 0,     5.0, 5, 5.0, 4, 5.0]
