@@ -1,0 +1,27 @@
+note: 'Format is [x, y, z, R, P, Y], xyz are in mm, RPY are in degree.
+
+  Note the welding pin is outward by 20mm.
+
+  R
+
+  xyzrpy_flange_to_tool = [-260.134, -86.536, 375.051, math.radians(128.916), math.radians(-2.388),
+  math.radians(106.673)]
+
+  xyzrpy_flange_to_vision = [-280.708, -120.054, 65.826, math.radians(103.781), math.radians(-88.619),
+  math.radians(92.522)]
+
+  '
+tool:
+- -193.832
+- -235.265
+- 228.232
+- 110.709
+- -0.35
+- 144.522
+vision:
+- -150.9
+- -285.281
+- 62.826
+- -2.79
+- -88.388
+- -122.548
