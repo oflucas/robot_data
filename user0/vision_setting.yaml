@@ -19,4 +19,4 @@ STEP_RIGHT_H_OUTPUT_H_FAR2: 15 # Right high, 2-6 mode, output higher side, more 
 STEP_RIGHT_H_OUTPUT_H_FAR_OFFSET2: 10.0
 V_SHAPE_BOTTOM2: 16 # v shape, lowest point, 17-1, exposure=11, capability=6, output z is to the right of 'green line'.
 V_SHAPE_BOTTOM2_FAR: 17 # same as 16, output more right by 10mm
-V_SHAPE_BOTTOM2_FAR_OFFSET: 10
+V_SHAPE_BOTTOM2_FAR_OFFSET: 10.0
