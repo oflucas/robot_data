@@ -1,0 +1,9 @@
+note: |
+  Format is [x, y, z, R, P, Y], xyz are in mm, RPY are in degree.
+  Note the welding pin is outward by 20mm.
+  Example:
+  xyzrpy_flange_to_tool: [-260.134, -86.536, 375.051, 128.916, -2.388, 106.673]
+  xyzrpy_flange_to_vision: [-280.708, -120.054, 65.826, 103.781, -88.619, 92.522]
+
+tool: [-190.64816884, -246.95514098, 243.72791879, 110.709, -0.350, 144.522]
+vision: [-150.900, -285.281, 62.826, -2.790, -88.388, -122.548]
