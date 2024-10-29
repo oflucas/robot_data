@@ -1,27 +1,17 @@
 note: 'Format is [x, y, z, R, P, Y], xyz are in mm, RPY are in degree.
 
-  Note the welding pin is outward by 20mm.
-
-  Robot 1
-
-  xyzrpy_flange_to_tool = [-260.134, -86.536, 375.051, math.radians(128.916), math.radians(-2.388),
-  math.radians(106.673)]
-
-  xyzrpy_flange_to_vision = [-280.708, -120.054, 65.826, math.radians(103.781), math.radians(-88.619),
-  math.radians(92.522)]
-
-  '
+  Note the welding pin is outward by 20mm. '
 tool:
-- -292.802898846185
-- -81.21629773272315
-- 298.3517055188603
-- 120.328
-- 0.695
-- 100.791
+- -292.56890022217294
+- -89.2755727897872
+- 299.48367538604185
+- 122.404
+- 3.575
+- 107.604
 vision:
-- -276.225
-- -122.057
-- 65.545
-- 123.062
-- -86.588
-- 74.102
+- -275.469
+- -128.661
+- 65.242
+- -80.725
+- -89.155
+- -81.275
