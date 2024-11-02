@@ -1,11 +1,11 @@
-description: For simple stright line, 243A 23.1V, gas-protection, 30mm big, (+2,)
-weld_length: 900.0
+description: H-shape workpiece
+weld_length: 100.0
 safe_height: 30.0
 weld_speed: 8.5
 actions:
-  - [-25.0, 0.0,24,  3.2] #1
-  - [-25, -5, 10,  5.2] #2
-  - [-23, -2, 25] #3
+  - [-25.0, 0.0, 22] #1
+  - [-25, -5, 10] #2
+  - [-23, -2, 22] #3
   - [-21, -7, 15] #4
   - [-21, -10, 10] #5
   - [-13, -2, 20,   8] #6
