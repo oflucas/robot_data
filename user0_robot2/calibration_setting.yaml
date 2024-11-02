@@ -2,9 +2,9 @@ note: 'Format is [x, y, z, R, P, Y], xyz are in mm, RPY are in degree.
 
   Note the welding pin is outward by 20mm. '
 tool:
-- -292.56890022217294
-- -89.2755727897872
-- 299.48367538604185
+- -298.53112539235565
+- -95.61848403278127
+- 292.27873751840235
 - 122.404
 - 3.575
 - 107.604
