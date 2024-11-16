@@ -9,5 +9,5 @@ Set-Location -Path $exec_path
 Write-Host "cd Directory: $(Get-Location)"
 
 python --version
-python -m robot.welding_hmi --debug_mode --username user0
+python -m robot.welding_hmi --username user0
 $name = Read-Host "Enter your name"
