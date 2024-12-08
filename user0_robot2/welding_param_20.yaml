@@ -3,8 +3,8 @@ weld_length: 90.0
 safe_height: 30.0
 weld_speed: 9
 tol: 10.0
-angle_a: 30
-middle_actions_offset: [0, 0]
+angle_a: 33
+middle_actions_offset: [0, -3]
 middle_actions:
   - [0.0, 0.0, -35] #1
   - [0, -3.0, -35] #2 
