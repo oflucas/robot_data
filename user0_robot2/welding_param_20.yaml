@@ -1,7 +1,7 @@
 description: H-shape workpiece (weld top)
 weld_length: 90.0
 safe_height: 30.0
-weld_speed: 9
+weld_speed: 7 
 tol: 10.0
 angle_a: 33
 middle_actions_offset: [0, -3]
