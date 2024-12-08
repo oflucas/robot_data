@@ -2,7 +2,7 @@ description: |
   For 2-point welding above top of H workpiece.
 weld_length: 900.0
 weld_speed: 10
-safe_height: 30.0
+safe_height: 80.0
 actions_offset: [0, 0]
 actions:
   - [0, 0, 0]
