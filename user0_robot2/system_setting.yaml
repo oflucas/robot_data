@@ -1,4 +1,8 @@
 # Robot Ethernet setting: 192.168.2.64, sub mask 255.255.255.0, gate 192.168.2.1
+cab: 'CAB7212243'
+version_scb: '03_11'
+version_controller: '1.5.13_32_X86_cab2_1'
 robot_id: 'CS110323'
 robot_ip: 192.168.2.64
 payload: 3.0
+has_vision: False
