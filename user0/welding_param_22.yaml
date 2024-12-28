@@ -1,0 +1,13 @@
+description: |
+  For 2-point welding with swing
+weld_length: 900.0
+weld_speed: 2
+safe_height: 80.0
+actions_offset: [0, 0]
+actions:
+  - [0, 0, 0]
+swing:
+  period: 4.0
+  hold_times: [0.5, 0.2, 0.5, 0.2]
+  first_stroke_rel_offset: [6, 0]
+  second_stroke_rel_offset: [4, 6]
