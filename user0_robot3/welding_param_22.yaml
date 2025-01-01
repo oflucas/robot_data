@@ -10,3 +10,4 @@ swing:
   period: 2.0
   first_stroke_rel_offset: [5, -5]
   second_stroke_rel_offset: [5, 0]
+executor_type: point_pairs
