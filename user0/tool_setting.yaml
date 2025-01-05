@@ -1,8 +1,7 @@
 tool1:
   note: 'Format is [x, y, z, R, P, Y], xyz are in mm, RPY are in degree.
-         The welding pin is outward by 20mm.
          If vision_id is not specified, app would not require vision connection.'
-  description: tool1
+  description: Weld pin outward 20mm. With vision.
   vision_id: vision1
   calibration:
     tool:
@@ -20,8 +19,7 @@ tool1:
     - -87.91
     - -58.845
 tool2:
-  note: The welding pin is outward by 20mm. No vision.
-  description: tool2
+  description: Weld pin outward 20mm. Without vision.
   calibration:
     tool:
       - -298.3512340001556
@@ -42,8 +40,7 @@ tool2:
       - -88.379
       - -100.337
 tool3:
-  note: The welding pin is outward by 20mm. No vision.
-  description: tool3
+  description: Weld pin outward 20mm. Without vision.
   calibration:
     tool:
       - 42.59164810180664
