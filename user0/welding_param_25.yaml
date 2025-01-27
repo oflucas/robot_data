@@ -1,0 +1,67 @@
+description: Rectangle Workpiece over a H-shape (weld top)
+weld_length: 90.0
+safe_height: 30.0
+safe_rotation_around_y_to_adjust_side: 45
+safe_rotation_around_x_to_adjust_side: -30
+weld_speed: 5
+tol: 20.0
+is_rectangle: True
+auto_toggle_side: True
+swing:
+  period: 3.0
+  hold_times: [0.4, 0.2, 0.4]
+  first_stroke_rel_offset: [6, 0]
+  second_stroke_rel_offset: [0, -5]
+middle_actions_offset: [0, 0]
+middle_actions:
+  - [0.0, 0.0, -45] #1
+  - [0, -3.0, -45] #2 
+  - [3, 0, -45] #3
+  - [2, -8, -45] #4
+  - [4, -5, -45] #5
+  - [7, -2, -45] #6, end
+  - [2, -12, -45] #7
+  - [5, -8, -45] #8
+  - [8, -6, -45] #9
+  - [11, -3, -45] #10
+  - [13, -1, -45] #11
+left_actions_offset: [0, 0]
+left_actions:
+  - [0.0, 0.0, -45] #1
+  - [0, -3.0, -45] #2 
+  - [3, 0, -45] #3
+  - [0, -6, -45] #4
+  - [4, -5, -45] #5
+  - [7, -2, -45] #6, end
+  - [2, -12, -45] #7
+  - [5, -8, -45] #8
+  - [8, -6, -45] #9
+  - [11, -3, -45] #10
+  - [13, -1, -45] #11
+right_actions_offset: [0, 0]
+right_actions:
+  - [0.0, 0.0, -45] #1
+  - [0, -3.0, -45] #2 
+  - [3, 0, -45] #3
+  - [2, -8, -45] #4
+  - [4, -5, -45] #5
+  - [7, -2, -45] #6, end
+  - [2, -12, -45] #7
+  - [5, -8, -45] #8
+  - [8, -6, -45] #9
+  - [11, -3, -45] #10
+  - [13, -1, -45] #11
+opposite_actions_offset: [0, 0]
+opposite_actions:
+  - [0.0, 0.0, -45] #1
+  - [0, -3.0, -45] #2 
+  - [3, 0, -45] #3
+  - [2, -8, -45] #4
+  - [4, -5, -45] #5
+  - [7, -2, -45] #6, end
+  - [2, -12, -45] #7
+  - [5, -8, -45] #8
+  - [8, -6, -45] #9
+  - [11, -3, -45] #10
+  - [13, -1, -45] #11
+executor_type: h_top

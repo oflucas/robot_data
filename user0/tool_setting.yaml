@@ -74,3 +74,21 @@ tool3:
     - -88.379
     - -100.337
   description: Weld pin outward 20mm. Without vision.
+tool4:
+  calibration:
+    tool:
+    - -97.64862823486328
+    - -286.9402160644531
+    - 153.31588745117188
+    - 94.20533752441406
+    - -1.154941439628601
+    - 158.77232360839844
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Weld pin outward 10mm. Without vision.
+  note: weld pin is horizontal.
