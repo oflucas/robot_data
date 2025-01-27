@@ -1,5 +1,6 @@
 vision1:
-  product_id: a
+  product_id: M108XKQ0008063
+  product_typename: CXZK-RBTA4-S
   ip: 192.168.2.3
   mode:
     V_SHAPE_BOTTOM: 1 # special 23-1 mode with opener in the bottom.
@@ -25,7 +26,8 @@ vision1:
     V_SHAPE_BOTTOM2_FAR: 17 # same as 16, output more right by 10mm
     V_SHAPE_BOTTOM2_FAR_OFFSET: 10.0
 vision2:
-  product_id: b
+  product_id: XXX
+  product_typename: CXZK-XXX
   ip: 192.168.2.3
   mode:
     # Right high, 2-6 mode, exposure=11->18, capability=6, feature value limit=102

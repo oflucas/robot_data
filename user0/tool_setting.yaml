@@ -1,8 +1,4 @@
 tool1:
-  note: 'Format is [x, y, z, R, P, Y], xyz are in mm, RPY are in degree.
-         If vision_id is not specified, app would not require vision connection.'
-  description: Weld pin outward 20mm. With vision.
-  vision_id: vision1
   calibration:
     tool:
     - -160.03323364257812
@@ -18,41 +14,63 @@ tool1:
     - -67.885
     - -87.91
     - -58.845
+  description: Weld pin outward 20mm. With vision.
+  note: Format is [x, y, z, R, P, Y], xyz are in mm, RPY are in degree. If vision_id
+    is not specified, app would not require vision connection.
+  vision_id: vision1
+tool1-a:
+  calibration:
+    tool:
+    - -160.03323364257812
+    - -278.256103515625
+    - 200.11643981933594
+    - 92.83741760253905
+    - -1.8614209890365603
+    - 154.14541625976562
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Weld pin outward 20mm. Without vision.
+  note: tool same as tool1 but without vision
 tool2:
-  description: Weld pin outward 20mm. Without vision.
   calibration:
     tool:
-      - -298.3512340001556
-      - -230.7858679331454
-      - 114.13728224012132
-      - 90.14865112304688
-      - 0.1061391532421112
-      - 129.38204956054688
+    - -298.3512340001556
+    - -230.7858679331454
+    - 114.13728224012132
+    - 90.14865112304688
+    - 0.1061391532421112
+    - 129.38204956054688
     tool_ref_point:
-      - 648.1220315964514
-      - 487.47036861545865
-      - 246.16159140014076
+    - 648.1220315964514
+    - 487.47036861545865
+    - 246.16159140014076
     vision:
-      - -262.939
-      - -147.471
-      - 61.347
-      - -58.006
-      - -88.379
-      - -100.337
-tool3:
+    - -262.939
+    - -147.471
+    - 61.347
+    - -58.006
+    - -88.379
+    - -100.337
   description: Weld pin outward 20mm. Without vision.
+tool3:
   calibration:
     tool:
-      - 42.59164810180664
-      - 31.62535858154297
-      - 579.1736450195312
-      - 175.9351043701172
-      - -21.857906341552734
-      - 105.08087158203125
+    - 42.59164810180664
+    - 31.62535858154297
+    - 579.1736450195312
+    - 175.9351043701172
+    - -21.857906341552734
+    - 105.08087158203125
     vision:
-      - -262.939
-      - -147.471
-      - 61.347
-      - -58.006
-      - -88.379
-      - -100.337
+    - -262.939
+    - -147.471
+    - 61.347
+    - -58.006
+    - -88.379
+    - -100.337
+  description: Weld pin outward 20mm. Without vision.
