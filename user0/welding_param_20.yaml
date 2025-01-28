@@ -5,6 +5,7 @@ weld_speed: 8
 tol: 20.0
 angle_a: 20
 angle_side: -30
+reverse_left_side: True
 enable_side_welding: True
 auto_toggle_side: True
 swing:

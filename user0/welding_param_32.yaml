@@ -1,32 +1,32 @@
-description: Rectangle Workpiece over a H-shape (weld top)
+description: Rectangle Workpiece over a H-shape (weld top), 117A 18.2V
 weld_length: 90.0
 safe_height: 30.0
 safe_rotation_around_y_to_adjust_side: 45
 safe_rotation_around_x_to_adjust_side: -30
-weld_speed: 5 # 1.3
+weld_speed: 1.2
 tol: 20.0
 is_rectangle: True
 auto_toggle_side: True
 middle_actions_offset: [0, 0]
 middle_actions_param:
-  break_points: [[50, 1000]]
+  #break_points: [[150, 1000]]
   swing_list:
-    - period: 3 #1
-      hold_times: [0.1, 0., 0.1, 0.]
+    - period: 3.2 #1
+      hold_times: [0.3, 0., 0.1, 0.]
       first_stroke_rel_offset: [4, 0]
       second_stroke_rel_offset: [0, -4]
-    - period: 3 #2
-      hold_times: [0.1, 0., 0.1, 0.]
-      first_stroke_rel_offset: [2.83, -2.83]
+    - period: 3.2 #2
+      hold_times: [0.3, 0., 0.1, 0.]
+      first_stroke_rel_offset: [2.12, 2.12]
+      second_stroke_rel_offset: [0, -3]
+    - period: 3.2 #3
+      hold_times: [0.3, 0., 0.1, 0.]
+      first_stroke_rel_offset: [5, 0]
       second_stroke_rel_offset: [0, -5]
-    - period: 3 #3
-      hold_times: [0.1, 0., 0.1, 0.]
-      first_stroke_rel_offset: [4, 0]
-      second_stroke_rel_offset: [0, -4]
 middle_actions:
   - [0.0, 0.0, -45] #1
   - [0, -4.0, -45] #2 
-  - [3, 0, -45] #3
+  - [6, 0, -45] #3
 left_actions_offset: [0, 0]
 left_actions:
   - [0.0, 0.0, -45] #1
