@@ -77,12 +77,13 @@ tool3:
 tool4:
   calibration:
     tool:
-    - -97.64862823486328
-    - -286.9402160644531
-    - 153.31588745117188
-    - 94.20533752441406
-    - -1.154941439628601
-    - 158.77232360839844
+    - -129.22471618652344
+    - -284.21307373046875
+    - 158.09193420410156
+    - 84.7459259033203
+    - 1.4092589616775513
+    - 151.25814819335938
+    tool_ref_point: [233.54909535942002, -302.9184126770517, -131.03232050247854]
     vision:
     - -160.675
     - -278.684
@@ -90,5 +91,6 @@ tool4:
     - -67.885
     - -87.91
     - -58.845
-  description: Weld pin outward 10mm. Without vision.
+  description: Weld pin outward mouth 18mm (however 15 maybe better). L-shape tool frame. Without vision. For
+    H-top.
   note: weld pin is horizontal.
