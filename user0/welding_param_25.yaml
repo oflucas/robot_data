@@ -58,7 +58,7 @@ opposite_actions:
   - [0.0, 0.0, -45] #1
   - [0, -4.0, -45] #2 
   - [3, -2, -45] #3
-  - [6, 0, -45] #3
+  - [6, 0, -45] #4
 opposite_actions_param:
   #break_points: [[150, 1000]]
   swing_list:

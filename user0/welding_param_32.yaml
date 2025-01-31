@@ -1,45 +1,22 @@
-description: Rectangle Workpiece over a H-shape (weld top), 117A 18.2V
-weld_length: 90.0
-safe_height: 30.0
-safe_rotation_around_y_to_adjust_side: 45
-safe_rotation_around_x_to_adjust_side: -30
+description: |
+  For 2-point welding with swing, T-shape head up. Pin should be outward by 15mm. 113A 18.4V
+weld_length: 900.0
 weld_speed: 1.2
-tol: 20.0
-is_rectangle: True
-auto_toggle_side: True
-middle_actions_offset: [0, 0]
-middle_actions_param:
-  #break_points: [[150, 1000]]
+safe_height: 30.0
+RTOL: True
+actions_offset: [0, 0]
+actions:
+  - [0.0, 0.0, 0, 1.5] #1
+  - [2, -3.0, 0, 1.2] #2 
+safe_return_coord: [0, 0, 50]
+actions_param:
   swing_list:
-    - period: 3.2 #1
-      hold_times: [0.3, 0., 0.1, 0.]
-      first_stroke_rel_offset: [4, 0]
-      second_stroke_rel_offset: [0, -4]
-    - period: 3.2 #2
-      hold_times: [0.3, 0., 0.1, 0.]
-      first_stroke_rel_offset: [2.12, 2.12]
+    - period: 3 #1
+      hold_times: [0.3, 0., 0, 0.]
+      first_stroke_rel_offset: [3, 0]
       second_stroke_rel_offset: [0, -3]
-    - period: 3.2 #3
-      hold_times: [0.3, 0., 0.1, 0.]
-      first_stroke_rel_offset: [5, 0]
-      second_stroke_rel_offset: [0, -5]
-middle_actions:
-  - [0.0, 0.0, -45] #1
-  - [0, -4.0, -45] #2 
-  - [6, 0, -45] #3
-left_actions_offset: [0, 0]
-left_actions:
-  - [0.0, 0.0, -45] #1
-  - [0, -3.0, -45] #2 
-  - [3, 0, -45] #3
-right_actions_offset: [0, 0]
-right_actions:
-  - [0.0, 0.0, -45] #1
-  - [0, -3.0, -45] #2 
-  - [3, 0, -45] #3
-opposite_actions_offset: [0, 0]
-opposite_actions:
-  - [0.0, 0.0, -45] #1
-  - [0, -3.0, -45] #2 
-  - [3, 0, -45] #3
-executor_type: h_top
+    - period: 1.5 #2
+      hold_times: [0.4, 0.]
+      first_stroke_rel_offset: [6.3, 3]
+      second_stroke_rel_offset: [-2, -6.6]
+executor_type: point_pairs
