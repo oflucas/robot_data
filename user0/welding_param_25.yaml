@@ -1,4 +1,4 @@
-description: Rectangle Workpiece over a H-shape (weld top), 117A 18.2V
+description: Rectangle Workpiece over a H-shape (weld top), 113A 18.4V
 weld_length: 90.0
 safe_height: 30.0
 safe_rotation_around_y_to_adjust_side: 45

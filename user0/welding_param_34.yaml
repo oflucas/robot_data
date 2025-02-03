@@ -1,0 +1,22 @@
+description: |
+  For 2-point welding with swing, small-piece T-shape head up. Pin should be outward (electric mouth) by 15mm.
+weld_length: 900.0
+weld_speed: 1.2
+safe_height: 30.0
+RTOL: True
+actions_offset: [0, 0]
+actions:
+  - [0.0, 0.0, 0, 1.5] #1, 113A 17.9V
+  - [2, -3.0, 0, 1.2] #2, 113A 17.9V 
+safe_return_coord: [0, 0, 50]
+actions_param:
+  swing_list:
+    - period: 2.5 #1
+      hold_times: [0.3, 0., 0, 0.]
+      first_stroke_rel_offset: [3, 0]
+      second_stroke_rel_offset: [0, -5]
+    - period: 2.5 #2
+      hold_times: [0.3, 0.1]
+      first_stroke_rel_offset: [6.3, 3]
+      second_stroke_rel_offset: [-2, -6.6]
+executor_type: point_pairs
