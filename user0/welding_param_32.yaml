@@ -1,5 +1,5 @@
 description: |
-  For 2-point welding with swing, large-piece T-shape head up. Pin should be outward (electric mouth) by 12mm.
+  For 2-point welding with swing, large-piece T-shape head up. Pin should be outward (electric mouth) by 13mm.
 weld_length: 900.0
 weld_speed: 1.2
 safe_height: 30.0
@@ -7,7 +7,7 @@ RTOL: True
 actions_offset: [0, 0]
 actions:
   - [0.0, 0.0, 0, 1.5] #1, 128A 18.3V
-  - [0, -3.5, 0, 1.2] #2, 128A 18.3V
+  - [0, -3.5, 0, 1.4] #2, 128A 18.3V
   - [4.0, 0.0, 0, 1.4] #3, 128A 18.3V 
 safe_return_coord: [0, 0, 50]
 actions_param:
