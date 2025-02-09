@@ -7,12 +7,7 @@ angle_a: 20
 angle_side: -30
 reverse_left_side: True
 enable_side_welding: True
-auto_toggle_side: True
-swing:
-  period: 3.0
-  hold_times: [0.5, 0.2, 0.5]
-  first_stroke_rel_offset: [6, 0]
-  second_stroke_rel_offset: [0, -5]
+auto_toggle_side: False
 middle_actions_offset: [0, 0]
 middle_actions:
   - [0.0, 0.0, -45, 7] #1

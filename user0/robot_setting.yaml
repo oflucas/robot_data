@@ -8,7 +8,7 @@ robot1:
   version_servo: 'R-6.10_3.196'
   payload: 3.0
 robot2:
-  ip: 192.168.2.64
+  ip: 10.5.5.100
   arm: 'CS110323'
   cab: 'CAB7212243'
   version_scb: '03_11'
