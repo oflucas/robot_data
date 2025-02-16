@@ -7,7 +7,7 @@ $data_dir = Join-Path -Path $base -ChildPath $data_repo
 $dist_dir = Join-Path -Path $base -ChildPath $dist_repo
 
 # Define the URL of the zip file and the target directory
-$url = "https://raw.githubusercontent.com/oflucas/robot_data/dist_robot.zip"
+$url = "https://raw.githubusercontent.com/oflucas/robot_data/main/dist_robot.zip"
 $zipFilePath = Join-Path -Path $data_dir -ChildPath "dist_robot.zip"
 
 # Download the zip file
@@ -24,10 +24,10 @@ if (Test-Path -Path $zipFilePath) {
     }
 
     # Extract the zip file
-    Expand-Archive -Path $zipFilePath -DestinationPath $dist_dir -Force
+    Expand-Archive -Path $zipFilePath -DestinationPath $base -Force
 
     # Optionally, remove the zip file after extraction
-    Remove-Item -Path $zipFilePath -Force
+    # Remove-Item -Path $zipFilePath -Force
 } else {
     Write-Host "Failed to download the zip file."
 }
