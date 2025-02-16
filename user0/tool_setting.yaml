@@ -116,3 +116,25 @@ tool5:
   description: Weld pin outward electricity mouth 15mm. L-shape tool frame. Without
     vision. For H-top.
   note: weld pin is horizontal.
+tool6:
+  calibration:
+    tool:
+    - -129.22471618652344
+    - -284.21307373046875
+    - 158.09193420410156
+    - 84.7459259033203
+    - 1.4092589616775513
+    - 151.25814819335938
+    tool_ref_point:
+    - 233.54909535942002
+    - -302.9184126770517
+    - -131.03232050247854
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Weld pin outward mouth 15mm. L-shape tool frame. Without vision. For H-top.
+  note: weld pin is horizontal.
