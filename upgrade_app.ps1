@@ -1,35 +1,30 @@
 # powershell.exe -ExecutionPolicy Bypass -File
 
 $base = $env:ROBOT_WORKSPACE
-$data_repo = "robot"
+$data_repo = "robot_data"
 $dist_repo = "dist_robot"
+$data_dir = Join-Path -Path $base -ChildPath $data_repo
 $dist_dir = Join-Path -Path $base -ChildPath $dist_repo
 
 # Define the URL of the zip file and the target directory
-
-
-$url = "https://raw.githubusercontent.com/oflucas/robot_data/robot_app.zip"
-$targetDir = "xxx"
-$zipFilePath = Join-Path -Path $targetDir -ChildPath "app.zip"
-$extractPath = Join-Path -Path $targetDir -ChildPath "app"
-
-# Create the target directory if it doesn't exist
-if (-not (Test-Path -Path $targetDir)) {
-    New-Item -ItemType Directory -Path $targetDir | Out-Null
-}
+$url = "https://raw.githubusercontent.com/oflucas/robot_data/dist_robot.zip"
+$zipFilePath = Join-Path -Path $data_dir -ChildPath "dist_robot.zip"
 
 # Download the zip file
+if (Test-Path -Path $zipFilePath) {
+    Remove-Item -Path $zipFilePath -Recurse -Force
+}
 Invoke-WebRequest -Uri $url -OutFile $zipFilePath
 
 # Check if the zip file was downloaded successfully
 if (Test-Path -Path $zipFilePath) {
-    # Remove the existing 'app' directory if it exists
-    if (Test-Path -Path $extractPath) {
-        Remove-Item -Path $extractPath -Recurse -Force
+    # Remove the existing directory if it exists
+    if (Test-Path -Path $dist_dir) {
+        Remove-Item -Path $dist_dir -Recurse -Force
     }
 
-    # Extract the zip file to the 'app' subdirectory
-    Expand-Archive -Path $zipFilePath -DestinationPath $extractPath -Force
+    # Extract the zip file
+    Expand-Archive -Path $zipFilePath -DestinationPath $dist_dir -Force
 
     # Optionally, remove the zip file after extraction
     Remove-Item -Path $zipFilePath -Force
