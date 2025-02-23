@@ -1,9 +1,9 @@
 description: |
-  For 2-point welding with swing, right-side of NEW vertical screw steel (square, width 40mm). Pin should be outward by 15mm. [Megmeet] 142A 17.6V. angle 38. need a lot buttering first.
+  For 2-point welding with swing, left-side of NEW vertical screw steel (square, width 40mm). Pin should be outward by 15mm. [Megmeet] 142A 17.6V. angle 38. need a lot buttering first.
 weld_length: 900.0
 weld_speed: 0.7
 safe_height: 30.0
-RTOL: False
+RTOL: True
 actions_offset: [0, 0]
 actions:
   - [0, 0, 0]
