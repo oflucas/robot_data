@@ -1,119 +1,95 @@
-description: H-shape workpiece
-weld_length: 90.0
+description: |
+  For 2-point welding with swing, 30mm butt welding.
+  Pin should be outward by 15mm.
+  [Megmeet] 142A 17.6V.
+weld_length: 900.0
+weld_speed: 1.5
 safe_height: 30.0
-weld_speed: 8.5
-left_actions_offset: [-25, 0]
-left_actions:
-  - [0, 0, 20,  3.2] #1, tier 1
-  - [2, 0, 20,  5.2] #2, tier 2
-  - [2, 4, 15, 5.2] #3
-  - [2, 9, 15, 5.2] #4
-  - [2, 14, 10, 5.2] #5
-  - [5, -1, 20,  5.2] #6, tier 3
-  - [5, 4, 20,   8] #7
-  - [5, 7, 20,   8] #8
-  - [5, 10, 15,   8] #9
-  - [5, 13, 10,   8] #10
-  - [5, 16, 10,   8] #11
-  - [5, 18, 10,   8] #12
-  - [10, 1, 20,   6.5] #13, tier 4
-  - [10, 5, 20,   6.5] #14
-  - [10, 9, 15,   6.5] #15
-  - [10, 13, 10,   6.5] #16
-  - [10, 17, 10,   6.5] #17
-  - [10, 21, 10,   6.5] #18
-  - [18, -1, 20,   6.5] #19, tier 5
-  - [18, 3, 20,   6.5] #20
-  - [18, 7, 20,   6.5] #21
-  - [18, 11, 15,   6.5] #22
-  - [18, 15, 15,   6.5] #23
-  - [18, 19, 10,   6.5] #24
-  - [18, 23, 10,   6.5] #25
-  - [18, 27, 10,   6.5] #26
-  - [18, 31, 10,   6.5] #27
-  - [24, -1, 5,   6.5] #28, tier 6
-  - [24, 3, 5,   6.5] #29
-  - [24, 7, 5,   6.5] #30
-  - [24, 11, 5,   6.5] #31
-  - [24, 15, 5,   6.5] #32
-  - [24, 19, 5,   6.5] #33
-  - [24, 23, 5,   6.5] #34
-  - [24, 27, 5,   6.5] #35
-  - [24, 31, 5,   6.5] #36
-right_actions_offset: [-25, 0]
-right_actions:
-  - [0, 0, 20,  3.2] #1, tier 1
-  - [2, 0, 20,  5.2] #2, tier 2
-  - [2, 4, 15, 5.2] #3
-  - [2, 9, 15, 5.2] #4
-  - [2, 14, 10, 5.2] #5
-  - [5, -1, 20,  5.2] #6, tier 3
-  - [5, 4, 20,   8] #7
-  - [5, 7, 20,   8] #8
-  - [5, 10, 15,   8] #9
-  - [5, 13, 10,   8] #10
-  - [5, 16, 10,   8] #11
-  - [5, 18, 10,   8] #12
-  - [10, 1, 20,   6.5] #13, tier 4
-  - [10, 5, 20,   6.5] #14
-  - [10, 9, 15,   6.5] #15
-  - [10, 13, 10,   6.5] #16
-  - [10, 17, 10,   6.5] #17
-  - [10, 21, 10,   6.5] #18
-  - [18, -1, 20,   6.5] #19, tier 5
-  - [18, 3, 20,   6.5] #20
-  - [18, 7, 20,   6.5] #21
-  - [18, 11, 15,   6.5] #22
-  - [18, 15, 15,   6.5] #23
-  - [18, 19, 10,   6.5] #24
-  - [18, 23, 10,   6.5] #25
-  - [18, 27, 10,   6.5] #26
-  - [18, 31, 10,   6.5] #27
-  - [24, -1, 5,   6.5] #28, tier 6
-  - [24, 3, 5,   6.5] #29
-  - [24, 7, 5,   6.5] #30
-  - [24, 11, 5,   6.5] #31
-  - [24, 15, 5,   6.5] #32
-  - [24, 19, 5,   6.5] #33
-  - [24, 23, 5,   6.5] #34
-  - [24, 27, 5,   6.5] #35
-  - [24, 31, 5,   6.5] #36
-middle_actions_offset: [-25, 0]
-middle_actions:
-  - [0, 0, 20,  3.2] #1, tier 1
-  - [2, 0, 20,  5.2] #2, tier 2
-  - [2, 4, 15, 5.2] #3
-  - [2, 9, 15, 5.2] #4
-  - [2, 14, 10, 5.2] #5
-  - [5, -1, 20,  5.2] #6, tier 3
-  - [5, 4, 20,   8] #7
-  - [5, 7, 20,   8] #8
-  - [5, 10, 15,   8] #9
-  - [5, 13, 10,   8] #10
-  - [5, 16, 10,   8] #11
-  - [5, 18, 10,   8] #12
-  - [10, 1, 20,   6.5] #13, tier 4
-  - [10, 5, 20,   6.5] #14
-  - [10, 9, 15,   6.5] #15
-  - [10, 13, 10,   6.5] #16
-  - [10, 17, 10,   6.5] #17
-  - [10, 21, 10,   6.5] #18
-  - [18, -1, 20,   6.5] #19, tier 5
-  - [18, 3, 20,   6.5] #20
-  - [18, 7, 20,   6.5] #21
-  - [18, 11, 15,   6.5] #22
-  - [18, 15, 15,   6.5] #23
-  - [18, 19, 10,   6.5] #24
-  - [18, 23, 10,   6.5] #25
-  - [18, 27, 10,   6.5] #26
-  - [18, 31, 10,   6.5] #27
-  - [24, -1, 5,   6.5] #28, tier 6
-  - [24, 3, 5,   6.5] #29
-  - [24, 7, 5,   6.5] #30
-  - [24, 11, 5,   6.5] #31
-  - [24, 15, 5,   6.5] #32
-  - [24, 19, 5,   6.5] #33
-  - [24, 23, 5,   6.5] #34
-  - [24, 27, 5,   6.5] #35
-  - [24, 31, 5,   6.5] #36
-executor_type: h_shape
+apply_fixed_rotation_for_angle_offset: True
+angle_a: 0.0
+actions_offset: [0, 0]
+actions:
+  - [0.0, 0.0, 10, 1.8] #1
+  - [5.0, 9.0, 0, 1.8] #2
+  - [8, 1, 10, 1.8] #3
+  - [10, 10, 10, 1.8] #4
+  - [10, 16, 10, 1.8] #5
+  - [13, 1, 10, 1.8] #6
+  - [14, 8, 10, 1.8] #7
+  - [14, 16, 10, 1.8] #8
+  - [14, 22, 0, 1.8] #9
+  - [16, 1, 10, 1.7] #10
+  - [17, 5, 10, 1.7] #11
+  - [17, 10, 10, 1.8] #12
+  - [17, 14, 10, 1.9] #13
+  - [17, 20, 10, 1.9] #14
+  - [17, 25, 10, 1.9] #15
+  - [17, 5, 10, 1.5] #16
+safe_return_coord: [0, 0, 50]
+actions_param:
+  swing_list:
+    - period: 2.5 #1
+      hold_times: [0., 0., 0.3, 0.]
+      first_stroke_rel_offset: [5, 0]
+      second_stroke_rel_offset: [0, 5]
+    - period: 2.5 #2
+      hold_times: [0., 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #3
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [5, 0]
+      second_stroke_rel_offset: [0, 5]
+    - period: 2.5 #4
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #5
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #6
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [5, 0]
+      second_stroke_rel_offset: [0, 5]
+    - period: 2.5 #7
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #8
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -5]
+      second_stroke_rel_offset: [0, 5]
+    - period: 2.5 #9
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #10
+      hold_times: [0., 0., 0.3, 0.]
+      first_stroke_rel_offset: [5, 0]
+      second_stroke_rel_offset: [0, 5]
+    - period: 2.5 #11
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #12
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #13
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #14
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #15
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+    - period: 2.5 #16
+      hold_times: [0, 0., 0.3, 0.]
+      first_stroke_rel_offset: [0, -4]
+      second_stroke_rel_offset: [0, 4]
+executor_type: point_pairs
