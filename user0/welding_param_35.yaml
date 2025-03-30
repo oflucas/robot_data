@@ -1,16 +1,16 @@
 description: |
-  For u shape welding with swing, large-piece head up. Pin should be outward (electric mouth) by 15mm. [Megmeet] 158A 18.4V
+  For u shape welding with swing, large-piece head up. Pin should be outward (electric mouth) by 15mm. [Megmeet] 152A 17.9V
 weld_length: 900.0
 safe_height: 130.0
 weld_speed: 1.2
-tol: 15.0
-angle_a: 40
+tol: 10.0
+angle_a: 45
 enable_side_welding: True
 actions_offset: [0, 0]
 actions:
-  - [0.0, 0.0, -48, 1.8] #1
-  - [0, -3.5, -48, 3.0] #2
-  - [4.0, 0.0, -48, 1.4] #3
+  - [0.0, 0.0, -38, 1.8] #1 v1.8
+  - [0, -3.5, -38, 3.0] #2
+  - [4.0, 0.0, -38, 1.4] #3
 actions_param:
   swing_list:
     - period: 2.5 #1

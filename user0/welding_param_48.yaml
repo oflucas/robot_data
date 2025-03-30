@@ -1,5 +1,5 @@
 description: |
-  For 2-point welding with swing, horizontal screw steel (diameter 25mm). Pin should be outward by 15mm. 135A 18.7V
+  For 2-point welding with swing, horizontal screw steel (diameter 25mm). Pin should be outward by 15mm. [Megmeet] 152A 17.9V
 weld_length: 900.0
 weld_speed: 0.7
 safe_height: 30.0
