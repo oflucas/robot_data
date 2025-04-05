@@ -101,12 +101,12 @@ tool4:
 tool5:
   calibration:
     tool:
-    - 245.18560791015625
-    - 147.12112426757812
-    - 216.1903076171875
-    - 89.17085266113281
-    - -0.6040322184562682
-    - -54.13956069946288
+    - 238.97518920898438
+    - 150.48849487304688
+    - 225.03875732421875
+    - 91.09427642822267
+    - 0.5657460689544678
+    - -55.16418075561523
     vision:
     - -160.675
     - -278.684
@@ -139,4 +139,58 @@ tool6:
     - -58.845
   description: Weld pin outward mouth 15mm. L-shape tool frame. Without vision. For
     H-top.
+  note: weld pin is horizontal.
+tool7:
+  calibration:
+    tool:
+    - -84.39745330810547
+    - -312.68927001953125
+    - 166.4427032470703
+    - 87.25337982177734
+    - -3.2950854301452637
+    - 165.0701751708984
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Weld pin outward mouth 15mm. Without vision. Undefined
+  note: weld pin is horizontal.
+tool8:
+  calibration:
+    tool:
+    - -84.39745330810547
+    - -312.68927001953125
+    - 166.4427032470703
+    - 87.25337982177734
+    - -3.2950854301452637
+    - 165.0701751708984
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Weld pin outward mouth 15mm. Without vision. Undefined
+  note: weld pin is horizontal.
+tool9:
+  calibration:
+    tool:
+    - -84.39745330810547
+    - -312.68927001953125
+    - 166.4427032470703
+    - 87.25337982177734
+    - -3.2950854301452637
+    - 165.0701751708984
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Weld pin outward mouth 15mm. Without vision. Undefined
   note: weld pin is horizontal.
