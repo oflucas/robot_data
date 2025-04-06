@@ -31,3 +31,5 @@ if (Test-Path -Path $zipFilePath) {
 } else {
     Write-Host "Failed to download the zip file."
 }
+
+$name = Read-Host "Press Any Keys"
