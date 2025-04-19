@@ -26,8 +26,8 @@ vision1:
     V_SHAPE_BOTTOM2_FAR: 17 # same as 16, output more right by 10mm
     V_SHAPE_BOTTOM2_FAR_OFFSET: 10.0
 vision2:
-  product_id: XXX
-  product_typename: CXZK-XXX
+  product_id: M108XZS0007372
+  product_typename: CXZK-RBTA4-S
   ip: 192.168.2.3
   mode:
     # Right high, 2-6 mode, exposure=11->18, capability=6, feature value limit=102
