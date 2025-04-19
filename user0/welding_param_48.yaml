@@ -7,7 +7,7 @@ RTOL: False
 actions_offset: [0, 0]
 actions:
   - [0, 0, 0]
-safe_return_coord: [0, 0, 50]
+safe_return_coord: [0, -50, 50]
 actions_param:
   swing_list:
     - period: 5.0 #1
