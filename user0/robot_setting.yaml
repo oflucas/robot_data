@@ -1,6 +1,8 @@
 # Robot Ethernet setting: 192.168.2.64, sub mask 255.255.255.0, gate 192.168.2.1
 robot1:
   ip: 10.5.5.100 #10.5.5.100 192.168.2.64 192.168.92.128
+  maker: 'jaka'
+  product: 'zu5'
   arm: 'C5100230'
   cab: 'CAB7213357'
   version_scb: '02_57'
@@ -9,6 +11,8 @@ robot1:
   payload: 3.0
 robot2:
   ip: 10.5.5.100
+  maker: 'jaka'
+  product: 'zu5'
   arm: 'CS110323'
   cab: 'CAB7212243'
   version_scb: '03_11'
@@ -16,8 +20,17 @@ robot2:
   payload: 3.0
 robot3:
   ip: 10.5.5.100
+  maker: 'jaka'
+  product: 'zu5'
   arm: 'C5110316'
   cab: 'CAB7212229'
   version_scb: '03_11'
   version_controller: '1.5.13_32_X86_cab2_1'
+  payload: 3.0
+robot11:
+  ip: 192.168.2.160
+  maker: 'rokae'
+  product: 'xMate CR7-C'
+  arm: 'X600VO0315'
+  cab: 'C600UY0210'
   payload: 3.0
