@@ -25,6 +25,7 @@ vision1:
     V_SHAPE_BOTTOM2: 16 # v shape, lowest point, 17-1, exposure=11, capability=6, output z is to the right of 'green line'.
     V_SHAPE_BOTTOM2_FAR: 17 # same as 16, output more right by 10mm
     V_SHAPE_BOTTOM2_FAR_OFFSET: 10.0
+    SCREW_STEEL_ON_TABLE: 18 # v shape, lowest point, 5-1, exposure=5, power=190, coner angle=120, capability=6, output z at 'green line'.
 vision2:
   product_id: M108XZS0007372
   product_typename: CXZK-RBTA4-S
