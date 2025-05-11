@@ -1,16 +1,17 @@
 description: |
-  Screw steel (diameter 15mm) on table scan and weld. Pin should be outward by 15mm. xxxA xxxV
-weld_speed: 6.0
+  Screw steel (diameter 15mm) on table scan and weld. Pin should be outward by 15mm. 217A 21.3V [Megmeet]
+weld_speed: 5.5
 safe_height: 50.0
 tol: 3.0
 angle_a: 45
+ext_offset: -5.0
 actions_offset: [0, 0]
 actions:
   - [0, 0, 45]
 actions_param:
   swing_list:
     - period: 1.2
-      hold_times: [0., 0., 0.1, 0.]
-      first_stroke_rel_offset: [7, 0]
-      second_stroke_rel_offset: [0, 7]
+      hold_times: [0., 0., 0.5, 0.]
+      first_stroke_rel_offset: [8, 0]
+      second_stroke_rel_offset: [0, 8]
 executor_type: screw_steel_on_table
