@@ -27,6 +27,26 @@ robot3:
   version_scb: '03_11'
   version_controller: '1.5.13_32_X86_cab2_1'
   payload: 3.0
+robot4:
+  ip: 10.5.5.100
+  maker: 'jaka'
+  product: 'zu5'
+  arm: 'C5100223'
+  cab: 'CAB7212495'
+  version_scb: '03_11'
+  version_controller: '1.5.13_32_X86_cab2_1'
+  version_servo: 'R-6.10_3.196'
+  payload: 3.0
+robot5:
+  ip: 10.5.5.100
+  maker: 'jaka'
+  product: 'zu5'
+  arm: 'C0000000'
+  cab: 'CAB0000000'
+  version_scb: '03_11'
+  version_controller: '1.5.13_32_X86_cab2_1'
+  version_servo: 'R-6.10_3.196'
+  payload: 3.0
 robot11:
   ip: 192.168.2.160
   maker: 'rokae'
