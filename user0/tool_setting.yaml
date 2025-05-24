@@ -1,4 +1,4 @@
-tool1:
+tool01:
   calibration:
     tool:
     - -160.03323364257812
@@ -18,7 +18,7 @@ tool1:
   note: Format is [x, y, z, R, P, Y], xyz are in mm, RPY are in degree. If vision_id
     is not specified, app would not require vision connection.
   vision_id: vision1
-tool1-a:
+tool01-a:
   calibration:
     tool:
     - -160.03323364257812
@@ -36,7 +36,7 @@ tool1-a:
     - -58.845
   description: Weld pin outward 20mm. Without vision.
   note: tool same as tool1 but without vision
-tool2:
+tool02:
   calibration:
     tool:
     - -298.3512340001556
@@ -58,7 +58,7 @@ tool2:
     - -100.337
   description: Weld pin outward 20mm. Without vision. 135 degree gun. for h top belly
     welding.
-tool3:
+tool03:
   calibration:
     tool:
     - 42.59164810180664
@@ -75,7 +75,7 @@ tool3:
     - -88.379
     - -100.337
   description: Weld pin outward 20mm. Without vision.
-tool4:
+tool04:
   calibration:
     tool:
     - -129.75546264648438
@@ -98,7 +98,7 @@ tool4:
   description: Weld pin outward mouth 18mm (however 15 maybe better). L-shape tool
     frame. Without vision. For H-top.
   note: weld pin is horizontal.
-tool5:
+tool05:
   calibration:
     tool:
     - 238.97518920898438
@@ -117,7 +117,7 @@ tool5:
   description: Weld pin outward electricity mouth 15mm. L-shape tool frame. Without
     vision. For H-top.
   note: weld pin is horizontal.
-tool6:
+tool06:
   calibration:
     tool:
     - -16.2889347076416
@@ -140,7 +140,7 @@ tool6:
   description: Weld pin outward mouth 15mm. L-shape tool frame. Without vision. For
     H-top.
   note: weld pin is horizontal.
-tool7:
+tool07:
   calibration:
     tool:
     - 225.95488374977728
@@ -159,7 +159,7 @@ tool7:
   description: Weld pin outward mouth 15mm. With vision.
   note: weld pin is horizontal.
   vision_id: vision2
-tool8:
+tool08:
   calibration:
     tool:
     - 85.67028152253437
@@ -178,7 +178,7 @@ tool8:
   description: Weld pin outward mouth 15mm. With vision.
   note: weld pin is horizontal.
   vision_id: vision1
-tool9:
+tool09:
   calibration:
     tool:
     - -84.39745330810547
@@ -194,8 +194,114 @@ tool9:
     - -67.885
     - -87.91
     - -58.845
+<<<<<<< HEAD
   description: Weld pin outward mouth 15mm. Without vision. Undefined
   note: weld pin is horizontal.
   vision_id: vision2
 tool_group1:
   tools: ['tool8', 'tool9']
+=======
+  description: Undefined
+tool10:
+  calibration:
+    tool:
+    - -110.58325958251953
+    - -106.14309692382812
+    - 194.74310302734375
+    - 88.27836608886719
+    - -1.4374499320983884
+    - 133.37869262695312
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: L-shape, for ring butt welding (work71)
+tool11:
+  calibration:
+    tool:
+    - -84.39745330810547
+    - -312.68927001953125
+    - 166.4427032470703
+    - 87.25337982177734
+    - -3.2950854301452637
+    - 165.0701751708984
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Undefined
+tool12:
+  calibration:
+    tool:
+    - -84.39745330810547
+    - -312.68927001953125
+    - 166.4427032470703
+    - 87.25337982177734
+    - -3.2950854301452637
+    - 165.0701751708984
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Undefined
+tool13:
+  calibration:
+    tool:
+    - -84.39745330810547
+    - -312.68927001953125
+    - 166.4427032470703
+    - 87.25337982177734
+    - -3.2950854301452637
+    - 165.0701751708984
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Undefined
+tool14:
+  calibration:
+    tool:
+    - -84.39745330810547
+    - -312.68927001953125
+    - 166.4427032470703
+    - 87.25337982177734
+    - -3.2950854301452637
+    - 165.0701751708984
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Undefined
+tool15:
+  calibration:
+    tool:
+    - -84.39745330810547
+    - -312.68927001953125
+    - 166.4427032470703
+    - 87.25337982177734
+    - -3.2950854301452637
+    - 165.0701751708984
+    vision:
+    - -160.675
+    - -278.684
+    - 63.966
+    - -67.885
+    - -87.91
+    - -58.845
+  description: Undefined
+>>>>>>> 3ed07c88e14b1e4a3501b0610e52c0155d9290a3
