@@ -1,5 +1,5 @@
 description: |
-  For ring welding with swing. Butt-welding. 5mm. [Megmeet] 140A 18.9V
+  For ring welding with swing. Butt-welding. 5mm. Tool10. [Megmeet] 140A 18.9V
 weld_length: 900.0
 safe_height: 30.0
 weld_speed: 2.0 # 2.0
@@ -16,7 +16,7 @@ actions_param:
     - period: 2.5 #1
       hold_times: [0.01, 0.01] # [0.3, 0., 0, 0.]
       first_stroke_rel_offset: [3, 2]
-      second_stroke_rel_offset: [3, -3]
+      second_stroke_rel_offset: [3, -1]
     - period: 1.5 #2
       hold_times: [0.01, 0.01]
       first_stroke_rel_offset: [-4, 4]
