@@ -197,17 +197,15 @@ tool09:
   description: Weld pin outward mouth 15mm. Without vision.
   note: weld pin is horizontal.
   vision_id: vision2
-tool_group1:
-  tools: ['tool8', 'tool9']
 tool10:
   calibration:
     tool:
-    - -110.58325958251953
-    - -106.14309692382812
-    - 194.74310302734375
-    - 88.27836608886719
-    - -1.4374499320983884
-    - 133.37869262695312
+    - 110.10709381103516
+    - 103.43598937988281
+    - 192.95294189453125
+    - 90.07394409179688
+    - 1.6546906232833862
+    - -48.21846389770507
     vision:
     - -160.675
     - -278.684
@@ -301,3 +299,7 @@ tool15:
     - -87.91
     - -58.845
   description: Undefined
+tool_group1:
+  tools:
+  - tool8
+  - tool9
