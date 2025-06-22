@@ -40,9 +40,9 @@ robot4:
 robot5:
   ip: 10.5.5.100
   maker: 'jaka'
-  product: 'zu5'
-  arm: 'C0000000'
-  cab: 'CAB0000000'
+  product: 'zu7'
+  arm: 'C5100218'
+  cab: 'CAB7212451'
   version_scb: '03_11'
   version_controller: '1.5.13_32_X86_cab2_1'
   version_servo: 'R-6.10_3.196'
@@ -57,6 +57,16 @@ robot6:
   version_controller: '1.7.1_36_A04_X64_cab2_1'
   version_servo: '0.0 TIO-0.0_0.0'
   payload: 1.0
+robot7:
+  ip: 10.5.5.100
+  maker: 'jaka'
+  product: 'zu7'
+  arm: 'C5100221'
+  cab: 'CAB7212231'
+  version_scb: '03_11'
+  version_controller: '1.5.13_32_X86_cab2_1'
+  version_servo: 'R-6.10_3.196'
+  payload: 3.0
 robot11:
   ip: 192.168.2.160
   maker: 'rokae'
