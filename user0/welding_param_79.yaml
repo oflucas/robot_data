@@ -13,4 +13,6 @@ actions_param:
       hold_times: [0.3, 0., 0, 0.]
       first_stroke_rel_offset: [5, 5]
       second_stroke_rel_offset: [5, 0]
+  piecewise_speed_list:
+    - [3, 3.1, 2, 3.0, 2, 3.1, 2, 3.2, 2] #1, note the first number is useless
 executor_type: smooth_square
