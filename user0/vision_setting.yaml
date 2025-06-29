@@ -41,3 +41,17 @@ vision2:
     V_SHAPE_BOTTOM2: 16 # v shape, lowest point, 17-1, exposure=11, capability=6, output z is to the right of 'green line'.
     V_SHAPE_BOTTOM2_FAR: 17 # same as 16, output more right by 10mm
     V_SHAPE_BOTTOM2_FAR_OFFSET: 10.0
+vision3:
+  product_id: M108XKQ0008060
+  product_typename: CXZK-RBTA4-S
+  ip: 192.168.2.3
+  mode:
+    SCREW_STEEL_ON_TABLE: 18 # v shape, lowest point, 5-1, exposure=5, power=190, coner angle=120, capability=6, output z at 'green line'.
+    SCREW_STEEL_OUTMOST_POINT: 19 # same as 18, output more right by 5mm. Installation Note: green light should point upwards!
+vision4:
+  product_id: M108XKQ0008073
+  product_typename: CXZK-RBTA4-S
+  ip: 192.168.2.4
+  mode:
+    SCREW_STEEL_ON_TABLE: 18 # v shape, lowest point, 5-1, exposure=5, power=190, coner angle=120, capability=6, output z at 'green line'.
+    SCREW_STEEL_OUTMOST_POINT: 19 # same as 18, output more right by 5mm. Installation Note: green light should point upwards!

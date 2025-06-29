@@ -72,15 +72,23 @@ robot11:
   maker: 'rokae'
   product: 'xMate CR7-C'
   arm: 'X600VO0315'
-  cab: 'C600UY0210'
+  cab: 'C600UY0215'
   payload: 3.0
 robot12:
   ip: 192.168.2.161
   maker: 'rokae'
   product: 'xMate CR7-C'
-  arm: 'XXXXXXXX'
-  cab: 'CCCCCCCC'
+  arm: 'X600UY0019'
+  cab: 'C600UY0210'
+  payload: 3.0
+robot13:
+  ip: 192.168.2.162
+  maker: 'rokae'
+  product: 'xMate SR5-C'
+  arm: 'X600UY0040'
+  cab: 'C600UY020B'
   payload: 3.0
 group1:
   maker: 'robot_team'
   robots: ['robot11', 'robot12']
+

@@ -1,5 +1,5 @@
 description: |
-  Screw steel (diameter 15mm) on table scan and weld. Pin should be outward by 15mm. 217A 21.3V [Megmeet]
+  Screw steel (diameter 15mm) on table scan and weld. Use Robot Team. Pin should be outward by 15mm. 217A 21.3V [Megmeet]
 weld_speed: 5.5
 safe_height: 50.0
 tol: 3.0
@@ -14,4 +14,6 @@ actions_param:
       hold_times: [0., 0., 0.5, 0.]
       first_stroke_rel_offset: [8, 0]
       second_stroke_rel_offset: [0, 8]
-executor_type: screw_steel_on_table_one_side
+executor_type: screw_steel_on_table
+coordinate_offsets:
+  - [-178.0, 701.0, 11.0]
