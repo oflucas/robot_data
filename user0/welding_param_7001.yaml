@@ -1,5 +1,5 @@
 description: |
-  For L-shape welding with swing. 10mm. lie down. Pin should be outward (electric mouth) by 15mm. [Megmeet] 140A 18.9V
+  For L-shape welding with swing. 10mm. Pin should be outward (electric mouth) by 15mm. [Megmeet] 140A 18.9V
 weld_length: 900.0
 safe_height: 30.0
 weld_speed: 1.2
@@ -28,6 +28,4 @@ actions_param:
       hold_times: [0.5, 0., 0, 0.]
       first_stroke_rel_offset: [0, 4]
       second_stroke_rel_offset: [5, 0]
-executor_type: lateral
-executor_param:
-  l_shape: True
+executor_type: point_pairs
