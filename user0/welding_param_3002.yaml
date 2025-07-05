@@ -27,5 +27,6 @@ actions_param:
       first_stroke_rel_offset: [0, -3]
       second_stroke_rel_offset: [0, 3]
 executor_type: lateral
+tolerance_factor_to_scan_step: 0.5
 executor_param:
   linear_mode: True
