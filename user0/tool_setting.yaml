@@ -231,6 +231,7 @@ tool11:
     - -87.91
     - -58.845
   description: For circle-corner suqare ring.
+  vision_id: vision2
 tool12:
   calibration:
     tool:
