@@ -31,3 +31,4 @@ actions_param:
 executor_type: lateral
 executor_param:
   l_shape: True
+  linear_mode: True
