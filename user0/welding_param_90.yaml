@@ -4,7 +4,7 @@ weld_speed: 5.5
 safe_height: 50.0
 tol: 3.0
 angle_a: 45
-ext_offset: -5.0
+ext_offset: -1.0
 actions_offset: [0, 0]
 actions:
   - [0, 0, 45]
