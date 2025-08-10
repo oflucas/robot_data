@@ -19,3 +19,58 @@ coordinate_offsets:
   - [-178.0, 701.0, 11.0]
 cart:
   ip: 192.168.2.99
+
+# Material handling sequence configuration
+fetch_sequence:
+  # Fetch sequence - moves to fetch screw steel from storage
+  fetch_moves:
+    # Move to safe approach position via joint move
+    - type: "joint"
+      angles: [0, -45, 90, 0, 45, 0]  # Joint angles in degrees
+      speed: 30
+    
+    # Approach pickup location via linear move
+    - type: "linear"
+      position: [500, 200, 150, 0, 180, 0]  # [x,y,z,rx,ry,rz] in mm/degrees
+      speed: 100
+    
+    # Lower to pickup position
+    - type: "linear"
+      position: [500, 200, 80, 0, 180, 0]  # Lower z to pickup height
+      speed: 50
+    
+    # Here gripper would close (handled by robot-specific logic)
+    
+    # Lift with material
+    - type: "linear"
+      position: [500, 200, 150, 0, 180, 0]  # Raise z for safe transport
+      speed: 50
+
+  # Place sequence - moves to place screw steel at welding position  
+  place_moves:
+    # Move to placement area via joint move
+    - type: "joint"
+      angles: [15, -30, 80, 10, 40, 0]
+      speed: 30
+    
+    # Approach placement location
+    - type: "linear"
+      position: [800, 400, 100, 0, 180, 0]  # Target placement position
+      speed: 100
+    
+    # Lower to placement position
+    - type: "linear"
+      position: [800, 400, 50, 0, 180, 0]   # Final placement height
+      speed: 50
+      
+    # Here gripper would open (handled by robot-specific logic)
+    
+    # Retract to safe position
+    - type: "linear"
+      position: [800, 400, 150, 0, 180, 0]  # Retract safely
+      speed: 50
+    
+    # Move to safe parking position
+    - type: "joint"
+      angles: [0, 0, 90, 0, 0, 0]  # Park position
+      speed: 30

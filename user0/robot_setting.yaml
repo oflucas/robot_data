@@ -88,7 +88,9 @@ robot13:
   arm: 'X600UY0040'
   cab: 'C600UY020B'
   payload: 3.0
+  gripper:
+    port: 'COM3'
 group1:
   maker: 'robot_team'
-  robots: ['robot11', 'robot12']
+  robots: ['robot11', 'robot12', 'robot13']
 
