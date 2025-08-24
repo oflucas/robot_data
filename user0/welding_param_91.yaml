@@ -26,14 +26,17 @@ fetch_sequence:
   # Fetch sequence - moves to fetch screw steel from storage
   fetch_moves:
     # Raise up via linear move
-    # Move to safe approach position via joint move
+    - type: "linear"
+      position: [392.2, -406.6, 805.5, -178.2, -0.6, 42.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+      speed: 100 # mm/s
+    # Toggle to workpiece side
     - type: "joint"
       angles: [148.7, 4.4, -74.3, 179.4, 98.4, 105.4]  # Joint angles in degrees
-      speed: 1000
+      speed: 20 # degree/s
     
     # Drop down to pickup location via linear move
     - type: "linear"
-      position: [-328.5, 360.6, 747.9, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [-328.5, 360.6, 647.9, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
     
   # Place sequence - moves to place screw steel at welding position  
@@ -43,8 +46,12 @@ fetch_sequence:
     - type: "linear"
       position: [-328.5, 360.6, 847.9, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
-
+    # Toggle to work side
     - type: "joint"
       angles: [120, -31.5, 34.3, 180.2, -116, 77.6]  # Joint angles in degrees
-      speed: 1000
+      speed: 20 # degree/s
+    # Drop down
+    - type: "linear"
+      position: [392.2, -406.6, 605.5, -178.2, -0.6, 42.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+      speed: 100 # mm/s
   
