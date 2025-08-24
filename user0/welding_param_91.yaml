@@ -22,13 +22,14 @@ cart:
 
 # Material handling sequence configuration
 fetch_sequence:
+  # Gripper opens first.
   # Fetch sequence - moves to fetch screw steel from storage
   fetch_moves:
     # Raise up via linear move
     # Move to safe approach position via joint move
     - type: "joint"
       angles: [148.7, 4.4, -74.3, 179.4, 98.4, 105.4]  # Joint angles in degrees
-      speed: 100 # degree/s
+      speed: 1000
     
     # Drop down to pickup location via linear move
     - type: "linear"
@@ -37,12 +38,13 @@ fetch_sequence:
     
   # Place sequence - moves to place screw steel at welding position  
   place_moves:
+    # Gripper closes first.
     # Raise up via linear move
     - type: "linear"
       position: [-328.5, 360.6, 847.9, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
 
     - type: "joint"
-      angles: [120, -31.5, 34.3, 180.2, -133.3, 77.6]  # Joint angles in degrees
-      speed: 100 # degree/s
+      angles: [120, -31.5, 34.3, 180.2, -116, 77.6]  # Joint angles in degrees
+      speed: 1000
   
