@@ -25,7 +25,7 @@ fetch_sequence:
   fetch_moves:
     # Raise up via linear move
     - type: "linear"
-      position: [391.8, -423.9, 783.7, 179.6, -0.6, 43]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [381.2, -405.7, 780, 179.6, -0.6, 45.3]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
     # Further up avoid collision
     - type: "joint"
@@ -67,6 +67,6 @@ fetch_sequence:
       speed: 20 # degree/s
     # Drop down
     - type: "linear"
-      position: [391.8, -423.9, 633.7, 179.6, -0.6, 43]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [381.2, -405.7, 632.9, 179.6, -0.6, 45.3]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
   
