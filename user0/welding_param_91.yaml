@@ -15,8 +15,6 @@ actions_param:
       first_stroke_rel_offset: [8, 0]
       second_stroke_rel_offset: [0, 8]
 executor_type: screw_steel_on_table
-coordinate_offsets:
-  - [-178.0, 701.0, 11.0]
 cart:
   ip: 192.168.2.99
 
@@ -27,16 +25,33 @@ fetch_sequence:
   fetch_moves:
     # Raise up via linear move
     - type: "linear"
-      position: [392.2, -406.6, 805.5, -178.2, -0.6, 42.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [391.8, -423.9, 783.7, 179.6, -0.6, 43]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
-    # Toggle to workpiece side
+    # Further up avoid collision
     - type: "joint"
-      angles: [148.7, 4.4, -74.3, 179.4, 98.4, 105.4]  # Joint angles in degrees
+      angles: [117, -13.5, 34, 183.6, -115, 80]  # Joint angles in degrees
+      speed: 20 # degree/s
+    - type: "joint"
+      angles: [106, -25, -8, 216, -116.4, 80]  # Joint angles in degrees
+      speed: 20 # degree/s
+    # Avoid ceiling collision
+    - type: "joint"
+      angles: [116, -12, -20, 197, -52, 87]  # Joint angles in degrees
+      speed: 20 # degree/s
+    - type: "joint"
+      angles: [116, -12, -20, 197, 8, 87]  # Joint angles in degrees
+      speed: 20 # degree/s
+    - type: "joint"
+      angles: [116, -12, -20, 197, 67, 87]  # Joint angles in degrees
+      speed: 20 # degree/s
+    # Near workpiece side
+    - type: "joint"
+      angles: [145, 19, -51, 181, 106, 105]  # Joint angles in degrees
       speed: 20 # degree/s
     
     # Drop down to pickup location via linear move
     - type: "linear"
-      position: [-328.5, 360.6, 647.9, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [-384.6, 414.5, 605, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
     
   # Place sequence - moves to place screw steel at welding position  
@@ -44,14 +59,14 @@ fetch_sequence:
     # Gripper closes first.
     # Raise up via linear move
     - type: "linear"
-      position: [-328.5, 360.6, 847.9, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [-384.6, 414.5, 805, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
     # Toggle to work side
     - type: "joint"
-      angles: [120, -31.5, 34.3, 180.2, -116, 77.6]  # Joint angles in degrees
+      angles: [120, -50, -3, 181, -132, 74]  # Joint angles in degrees
       speed: 20 # degree/s
     # Drop down
     - type: "linear"
-      position: [392.2, -406.6, 605.5, -178.2, -0.6, 42.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [391.8, -423.9, 633.7, 179.6, -0.6, 43]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
   
