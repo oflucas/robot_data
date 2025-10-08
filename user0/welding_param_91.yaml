@@ -46,12 +46,12 @@ fetch_sequence:
       speed: 20 # degree/s
     # Near workpiece side
     - type: "joint"
-      angles: [145, 19, -51, 181, 106, 105]  # Joint angles in degrees
+      angles: [150, -2.6, -55, 178, 113, 107]  # Joint angles in degrees
       speed: 20 # degree/s
     
     # Drop down to pickup location via linear move
     - type: "linear"
-      position: [-384.6, 414.5, 605, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [-312.75, 374.1, 792.2, -176.1, 1.9, 44.2]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
     
   # Place sequence - moves to place screw steel at welding position  
@@ -59,7 +59,7 @@ fetch_sequence:
     # Gripper closes first.
     # Raise up via linear move
     - type: "linear"
-      position: [-384.6, 414.5, 805, -177.1, 0.2, 43.2]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [-312.75, 374.1, 840, -176, 1.9, 44.2]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
     # Toggle to work side
     - type: "joint"
@@ -67,6 +67,6 @@ fetch_sequence:
       speed: 20 # degree/s
     # Drop down
     - type: "linear"
-      position: [381.2, -405.7, 632.9, 179.6, -0.6, 45.3]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [381.2, -405.7, 629.2, 179.6, -0.6, 45.3]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
   

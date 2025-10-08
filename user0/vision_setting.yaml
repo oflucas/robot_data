@@ -56,3 +56,17 @@ vision4:
   mode:
     SCREW_STEEL_ON_TABLE: 18 # v shape, lowest point, 5-1, exposure=5, power=190, coner angle=120, capability=6, output z at 'green line'.
     SCREW_STEEL_OUTMOST_POINT: 19 # same as 18, output more right by 5mm. Installation Note: green light should point upwards!
+vision5:
+  product_id: M311XJR0003440
+  product_typename: CXZK-RBTA4N-DKH
+  ip: 192.168.2.5
+  mode:
+    SCREW_STEEL_ON_TABLE: 18 # v shape, lowest point, 5-1, exposure=4, anti-reflection mode 1, power=190, coner angle=120, capability=6, output z at 'green line'.
+    SCREW_STEEL_OUTMOST_POINT: 19 # same as 18, output more right by 5mm. Installation Note: green light should point upwards!
+vision6:
+  product_id: M311XJR0003441
+  product_typename: CXZK-RBTA4N-DKH
+  ip: 192.168.2.6
+  mode:
+    SCREW_STEEL_ON_TABLE: 18 # v shape, lowest point, 5-1, exposure=5, power=190, coner angle=120, capability=6, output z at 'green line'.
+    SCREW_STEEL_OUTMOST_POINT: 19 # same as 18, output more right by 5mm. Installation Note: green light should point upwards!
