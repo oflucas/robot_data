@@ -8,6 +8,10 @@ ext_offset: -1.0
 actions_offset: [0, 0]
 actions:
   - [0, 0, 45]
+# welding_config:
+#   mode: iv
+#   current: 200.0
+#   voltage_mode: unified
 actions_param:
   swing_list:
     - period: 1.2

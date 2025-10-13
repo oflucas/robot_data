@@ -232,6 +232,8 @@ tool12:
     - -58.845
   description: Undefined
 tool13:
+  gripper:
+    port: 'COM3'
   calibration:
     tool:
     - 0
