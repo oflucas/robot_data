@@ -4,7 +4,7 @@ weld_speed: 5.5
 welding_config:
   mode: iv
   current: 180.0
-  voltage: 20.0 # X means +X% in unified mode.
+  voltage: 17.0 # X means +X% in unified mode.
   voltage_mode: unified
 safe_height: 20.0
 tol: 3.0

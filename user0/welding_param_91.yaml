@@ -4,7 +4,7 @@ weld_speed: 5.5
 welding_config:
   mode: iv
   current: 180.0
-  voltage: 20.0 # X means +X% in unified mode.
+  voltage: 17.0 # X means +X% in unified mode.
   voltage_mode: unified
 safe_height: 20.0
 tol: 3.0
@@ -72,9 +72,9 @@ fetch_sequence:
       speed: 20 # degree/s
     # Drop down
     - type: "linear"
-      position: [396, -405, 635, 179.6, -0.6, 44.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [378.8, -405, 637, 179.6, -0.6, 44.5]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
     - type: "linear"
-      position: [396, -405, 595.5, 179.6, -0.6, 44.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [378.8, -405, 597, 179.6, -0.6, 44.5]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 10 # mm/s
   
