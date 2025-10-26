@@ -1,6 +1,6 @@
 description: |
   Screw steel (diameter 15mm) on table scan and weld. Pin should be outward by 15mm. [Megmeet]
-weld_speed: 5.5
+weld_speed: 5
 welding_config:
   mode: iv
   current: 180.0

@@ -1,7 +1,7 @@
 Write-Host "Current Directory: $(Get-Location)"
 $base = $env:ROBOT_WORKSPACE
 $dev_repo = "robot"
-$dist = "dist_robot"
+$dist = "dist_robot_py310"
 $exec_path = Join-Path -Path $base -ChildPath $dist
 Write-Host $exec_path
 
