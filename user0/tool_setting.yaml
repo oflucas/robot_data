@@ -1,3 +1,5 @@
+tool00:
+  description: Dummy Tool
 tool01:
   calibration:
     tool:
@@ -289,3 +291,4 @@ tool_group1:
   - tool08
   - tool09
   - tool13
+  - tool00

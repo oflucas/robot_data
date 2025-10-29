@@ -20,8 +20,6 @@ actions_param:
       first_stroke_rel_offset: [6, 0]
       second_stroke_rel_offset: [0, 8]
 executor_type: screw_steel_on_table
-cart:
-  ip: 192.168.2.99
 
 # Material handling sequence configuration
 fetch_sequence:
@@ -39,16 +37,6 @@ fetch_sequence:
     - type: "joint"
       angles: [106, -25, -8, 216, -116.4, 80]  # Joint angles in degrees
       speed: 20 # degree/s
-    # Avoid ceiling collision
-    # - type: "joint"
-    #   angles: [116, -12, -20, 197, -52, 87]  # Joint angles in degrees
-    #   speed: 20 # degree/s
-    # - type: "joint"
-    #   angles: [116, -12, -20, 197, 8, 87]  # Joint angles in degrees
-    #   speed: 20 # degree/s
-    # - type: "joint"
-    #   angles: [116, -12, -20, 197, 67, 87]  # Joint angles in degrees
-    #   speed: 20 # degree/s
     # Near workpiece side
     - type: "joint"
       angles: [149, 10, -53, 178, 113, 104]  # Joint angles in degrees

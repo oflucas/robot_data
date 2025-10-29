@@ -88,7 +88,10 @@ robot13:
   arm: 'X600UY0040'
   cab: 'C600UY020B'
   payload: 3.0
+robot14:
+  ip: 192.168.2.99
+  maker: 'cart'
 group1:
   maker: 'robot_team'
-  robots: ['robot11', 'robot12', 'robot13']
+  robots: ['robot11', 'robot12', 'robot13', 'robot14']
 
