@@ -3,8 +3,8 @@ description: |
 weld_speed: 5
 welding_config:
   mode: iv
-  current: 143.0
-  voltage: 13.0 # X means +X% in unified mode.
+  current: 160.0
+  voltage: 1.0 # X means +X% in unified mode.
   voltage_mode: unified
 safe_height: 20.0
 tol: 3.0
@@ -20,7 +20,7 @@ actions_param:
       first_stroke_rel_offset: [6, 0]
       second_stroke_rel_offset: [0, 7]
 executor_type: screw_steel_on_table
-auto_cart_move_distance: 200 # mm
+auto_cart_move_distance: 70 # mm
 
 # Material handling sequence configuration
 fetch_sequence:
@@ -42,7 +42,7 @@ fetch_sequence:
     
     # Drop down to pickup location via linear move
     - type: "linear"
-      position: [-256.6, 323.5, 866, 179.7, -0.1, 45.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+      position: [-256.6, 323.5, 867.5, 179.7, -0.1, 45.5]  # [x,y,z,rx,ry,rz] in mm/degrees
       speed: 100 # mm/s
     
   # Place sequence - moves to place screw steel at welding position  
