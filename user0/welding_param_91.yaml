@@ -20,7 +20,8 @@ actions_param:
       first_stroke_rel_offset: [6, 0]
       second_stroke_rel_offset: [0, 7]
 executor_type: screw_steel_on_table
-auto_cart_move_distance: 70 # mm
+auto_cart_move_distance: 228 # mm, will run over 13mm, need 240 in real
+multi_steps_num: 6
 
 # Material handling sequence configuration
 fetch_sequence:
