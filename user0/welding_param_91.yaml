@@ -2,7 +2,7 @@ description: |
   Screw steel (diameter 15mm) on table scan and weld. Use Robot Team. Pin should be outward by 15mm. 217A 21.3V [Megmeet]
 weld_speed: 5
 welding_config:
-  mode: io
+  mode: io # Manual set 123A 18V, pulse mode.
   current: 160.0 # Only effective for 'iv' mode.
   voltage: 1.0 # X means +X% in unified mode.
   voltage_mode: unified
