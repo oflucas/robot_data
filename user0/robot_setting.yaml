@@ -13,7 +13,7 @@ robot2:
   ip: 10.5.5.100
   maker: 'jaka'
   product: 'zu5'
-  arm: 'CS110323'
+  arm: 'C5100218 '
   cab: 'CAB7212243'
   version_scb: '03_11'
   version_controller: '1.5.13_32_X86_cab2_1'
