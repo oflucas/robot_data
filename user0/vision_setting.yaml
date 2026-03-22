@@ -72,3 +72,11 @@ vision6:
     SCREW_STEEL_ON_TABLE: 18 # v shape, lowest point, 5-1, exposure=5, power=190, coner angle=120, capability=6, output z at 'green line'.
     SCREW_STEEL_OUTMOST_POINT: 19 # same as 18, output more right by 5mm. Installation Note: green light should point upwards!
     SCREW_STEEL_PLANE_POINT: 21 # direct read lazer point 24-1, exposure=4, anti-reflection mode 1, power=190, x=-10mm relative to green line (left of green line).
+vision7:
+  product_id: M311XRJ0003246
+  product_typename: CXZK-RBTA4N-DKH
+  ip: 192.168.2.3
+  mode:
+    # Right high, 2-6 mode, exposure=11->18, capability=6, feature value limit=102
+    STEP_RIGHT_H_OUTPUT_H2: 13 # (dummy) Right high, 2-6 mode, output higher side
+    STEP_RIGHT_H_OUTPUT_L2: 14 # (dummy) Right high, 2-6 mode, output Lower side
