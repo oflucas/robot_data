@@ -252,28 +252,22 @@ tool13:
   description: For fetcher robot with a gripper.
   gripper:
     port: COM5
-tool_group1:
-  tools:
-  - tool08
-  - tool09
-  - tool13
-  - tool00
 tool14:
   calibration:
     tool:
-    - 75.90809889267865
-    - -6.41366374127951
-    - 457.3877650366235
-    - 146.83430584121882
-    - 1.093044469708841
-    - -85.73537353650518
+    - -191.48388671875
+    - -190.68186950683594
+    - 356.5734558105469
+    - 113.93601989746094
+    - -1.4590708017349243
+    - 132.90538024902344
     vision:
-    - 37.26714746852472
-    - -2.5259589333399
-    - 506.4209398613397
-    - 179.25567798820293
-    - 31.846162224253373
-    - 2.194643113966797
+    - -205.01614379882812
+    - -204.25082397460938
+    - 302.2423095703125
+    - 175.1792449951172
+    - 64.94841766357422
+    - -140.327880859375
   description: Weld pin outward mouth 20mm. With vision. H-shape (101) workpiece.
   note: weld pin is around 25 degree.
   vision_id: vision7
@@ -311,3 +305,9 @@ tool16:
     - -87.91
     - -58.845
   description: Undefined
+tool_group1:
+  tools:
+  - tool08
+  - tool09
+  - tool13
+  - tool00

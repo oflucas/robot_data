@@ -77,6 +77,4 @@ vision7:
   product_typename: CXZK-RBTA4N-DKH
   ip: 192.168.2.3
   mode:
-    # Right high, 2-6 mode, exposure=11->18, capability=6, feature value limit=102
-    STEP_RIGHT_H_OUTPUT_H2: 13 # (dummy) Right high, 2-6 mode, output higher side
-    STEP_RIGHT_H_OUTPUT_L2: 14 # (dummy) Right high, 2-6 mode, output Lower side
+    STEP_ANGLE20: 22 # (dummy) Outer corner 4-2 mode, anti-reflection mode=1, exposure=4, power=default, capability=0, rm_line=65 
