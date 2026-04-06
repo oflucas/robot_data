@@ -268,7 +268,7 @@ tool14:
     - 175.1792449951172
     - 64.94841766357422
     - -140.327880859375
-  description: Weld pin outward mouth 20mm. With vision. H-shape (101) workpiece.
+  description: Weld pin outward mouth 20mm. With vision. H-shape (101,102) workpiece.
   note: weld pin is around 25 degree.
   vision_id: vision7
 tool15:
