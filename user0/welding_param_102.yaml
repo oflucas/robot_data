@@ -2,6 +2,7 @@ description: H-shape workpiece with scan. Usually use robot 6, tool 14.
 weld_length: 90.0
 safe_height: 30.0
 weld_speed: 10.0 # old one: 3.2
+multi_steps_num: 9
 post_fire_config:
   wait_time: 2.0
   another_fire_time: 2.0
