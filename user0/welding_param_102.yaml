@@ -1,7 +1,7 @@
 description: H-shape workpiece with scan. Usually use robot 6, tool 14.
 weld_length: 90.0
 safe_height: 30.0
-weld_speed: 3.2
+weld_speed: 10.0 # old one: 3.2
 post_fire_config:
   wait_time: 2.0
   another_fire_time: 2.0
@@ -10,30 +10,30 @@ middle_actions:
   - [2, 0, 25] #1
   - [2, 3, 20] #2
   - [4, 6, 15] #3
-  - [7, 0, 25] #4 Tier 2
-  - [7, 5, 15] #5
-  - [7, 9, 15] #6
-  - [8, 12, 0] #7
-  - [14, 0, 25] #8 Tier 3
-  - [14, 6, 20] #9
-  - [14, 13, 20] #10
-  - [14, 18, 20] #11
-  - [14, 22, 0] #12
-  - [22, 0, 25] #13 Tier 4
-  - [22, 5, 20] #14
-  - [22, 10, 20] #15
-  - [22, 16, 20] #16
-  - [22, 22, 20] #17
-  - [22, 28, 0] #18
-  - [28, 0, 10] #19 Tier 5
-  - [28, 5, 10] #20
-  - [28, 10, 10] #21
-  - [28, 15, 10] #22
-  - [28, 20, 10] #23
-  - [28, 25, 10] #24
-  - [28, 30, 10] #25
-  - [28, 35, 10] #26
-  - [28, 40, 5] #27
+#   - [7, 0, 25] #4 Tier 2
+#   - [7, 5, 15] #5
+#   - [7, 9, 15] #6
+#   - [8, 12, 0] #7
+#   - [14, 0, 25] #8 Tier 3
+#   - [14, 6, 20] #9
+#   - [14, 13, 20] #10
+#   - [14, 18, 20] #11
+#   - [14, 22, 0] #12
+#   - [22, 0, 25] #13 Tier 4
+#   - [22, 5, 20] #14
+#   - [22, 10, 20] #15
+#   - [22, 16, 20] #16
+#   - [22, 22, 20] #17
+#   - [22, 28, 0] #18
+#   - [28, 0, 10] #19 Tier 5
+#   - [28, 5, 10] #20
+#   - [28, 10, 10] #21
+#   - [28, 15, 10] #22
+#   - [28, 20, 10] #23
+#   - [28, 25, 10] #24
+#   - [28, 30, 10] #25
+#   - [28, 35, 10] #26
+#   - [28, 40, 5] #27
 middle_actions_param:
   swing_list:
     - dummy: True #1
@@ -42,135 +42,135 @@ middle_actions_param:
       hold_times: [0.01, 0.01] # 0 does not work for jaka S12.
       first_stroke_rel_offset: [0, 2]
       second_stroke_rel_offset: [0, -2]
-    - period: 2 #4
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [4, 0]
-    - period: 2 #5
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [4, 0]
-    - period: 2 #6
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [4, 0]
-    - period: 2 #7
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [0, -4]
-    - period: 2 #8
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #8
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #9
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #10
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #11
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #12
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [0, -6]
-    - period: 2 #13
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #14
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #15
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #16
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #17
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #18
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [0, -6]
-    - period: 2 #19
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #20
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #21
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #22
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #23
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #24
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #25
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #26
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #27
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [0, -6]
+    # - period: 2 #4
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [4, 0]
+    # - period: 2 #5
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [4, 0]
+    # - period: 2 #6
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [4, 0]
+    # - period: 2 #7
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [0, -4]
+    # - period: 2 #8
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #8
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #9
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #10
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #11
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #12
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [0, -6]
+    # - period: 2 #13
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #14
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #15
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #16
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #17
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #18
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [0, -6]
+    # - period: 2 #19
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #20
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #21
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #22
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #23
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #24
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #25
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #26
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #27
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [0, -6]
 left_actions_offset: [-28, 0]
 left_actions:
   - [2, 0, 25] #1
   - [2, 3, 20] #2
   - [4, 6, 15] #3
-  - [7, 0, 25] #4 Tier 2
-  - [7, 5, 15] #5
-  - [7, 9, 15] #6
-  - [8, 12, 0] #7
-  - [14, 0, 25] #8 Tier 3
-  - [14, 6, 20] #9
-  - [14, 13, 20] #10
-  - [14, 18, 20] #11
-  - [14, 22, 0] #12
-  - [22, 0, 25] #13 Tier 4
-  - [22, 5, 20] #14
-  - [22, 10, 20] #15
-  - [22, 16, 20] #16
-  - [22, 22, 20] #17
-  - [22, 28, 0] #18
-  - [28, 0, 10] #19 Tier 5
-  - [28, 5, 10] #20
-  - [28, 10, 10] #21
-  - [28, 15, 10] #22
-  - [28, 20, 10] #23
-  - [28, 25, 10] #24
-  - [28, 30, 10] #25
-  - [28, 35, 10] #26
-  - [28, 40, 5] #27
+#   - [7, 0, 25] #4 Tier 2
+#   - [7, 5, 15] #5
+#   - [7, 9, 15] #6
+#   - [8, 12, 0] #7
+#   - [14, 0, 25] #8 Tier 3
+#   - [14, 6, 20] #9
+#   - [14, 13, 20] #10
+#   - [14, 18, 20] #11
+#   - [14, 22, 0] #12
+#   - [22, 0, 25] #13 Tier 4
+#   - [22, 5, 20] #14
+#   - [22, 10, 20] #15
+#   - [22, 16, 20] #16
+#   - [22, 22, 20] #17
+#   - [22, 28, 0] #18
+#   - [28, 0, 10] #19 Tier 5
+#   - [28, 5, 10] #20
+#   - [28, 10, 10] #21
+#   - [28, 15, 10] #22
+#   - [28, 20, 10] #23
+#   - [28, 25, 10] #24
+#   - [28, 30, 10] #25
+#   - [28, 35, 10] #26
+#   - [28, 40, 5] #27
 left_actions_param:
   swing_list:
     - dummy: True #1
@@ -179,135 +179,135 @@ left_actions_param:
       hold_times: [0.01, 0.01] # 0 does not work for jaka S12.
       first_stroke_rel_offset: [0, 2]
       second_stroke_rel_offset: [0, -2]
-    - period: 2 #4
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [4, 0]
-    - period: 2 #5
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [4, 0]
-    - period: 2 #6
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [4, 0]
-    - period: 2 #7
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [0, -4]
-    - period: 2 #8
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #8
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #9
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #10
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #11
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #12
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [0, -6]
-    - period: 2 #13
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #14
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #15
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #16
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #17
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #18
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [0, -6]
-    - period: 2 #19
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #20
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #21
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #22
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #23
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #24
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #25
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #26
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #27
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [0, -6]
+    # - period: 2 #4
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [4, 0]
+    # - period: 2 #5
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [4, 0]
+    # - period: 2 #6
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [4, 0]
+    # - period: 2 #7
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [0, -4]
+    # - period: 2 #8
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #8
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #9
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #10
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #11
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #12
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [0, -6]
+    # - period: 2 #13
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #14
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #15
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #16
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #17
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #18
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [0, -6]
+    # - period: 2 #19
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #20
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #21
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #22
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #23
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #24
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #25
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #26
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #27
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [0, -6]
 right_actions_offset: [-28, 0]
 right_actions:
   - [2, 0, 25] #1
   - [2, 3, 20] #2
   - [4, 6, 15] #3
-  - [7, 0, 25] #4 Tier 2
-  - [7, 5, 15] #5
-  - [7, 9, 15] #6
-  - [8, 12, 0] #7
-  - [14, 0, 25] #8 Tier 3
-  - [14, 6, 20] #9
-  - [14, 13, 20] #10
-  - [14, 18, 20] #11
-  - [14, 22, 0] #12
-  - [22, 0, 25] #13 Tier 4
-  - [22, 5, 20] #14
-  - [22, 10, 20] #15
-  - [22, 16, 20] #16
-  - [22, 22, 20] #17
-  - [22, 28, 0] #18
-  - [28, 0, 10] #19 Tier 5
-  - [28, 5, 10] #20
-  - [28, 10, 10] #21
-  - [28, 15, 10] #22
-  - [28, 20, 10] #23
-  - [28, 25, 10] #24
-  - [28, 30, 10] #25
-  - [28, 35, 10] #26
-  - [28, 40, 5] #27
+#   - [7, 0, 25] #4 Tier 2
+#   - [7, 5, 15] #5
+#   - [7, 9, 15] #6
+#   - [8, 12, 0] #7
+#   - [14, 0, 25] #8 Tier 3
+#   - [14, 6, 20] #9
+#   - [14, 13, 20] #10
+#   - [14, 18, 20] #11
+#   - [14, 22, 0] #12
+#   - [22, 0, 25] #13 Tier 4
+#   - [22, 5, 20] #14
+#   - [22, 10, 20] #15
+#   - [22, 16, 20] #16
+#   - [22, 22, 20] #17
+#   - [22, 28, 0] #18
+#   - [28, 0, 10] #19 Tier 5
+#   - [28, 5, 10] #20
+#   - [28, 10, 10] #21
+#   - [28, 15, 10] #22
+#   - [28, 20, 10] #23
+#   - [28, 25, 10] #24
+#   - [28, 30, 10] #25
+#   - [28, 35, 10] #26
+#   - [28, 40, 5] #27
 right_actions_param:
   swing_list:
     - dummy: True #1
@@ -316,104 +316,104 @@ right_actions_param:
       hold_times: [0.01, 0.01] # 0 does not work for jaka S12.
       first_stroke_rel_offset: [0, 2]
       second_stroke_rel_offset: [0, -2]
-    - period: 2 #4
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [4, 0]
-    - period: 2 #5
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [4, 0]
-    - period: 2 #6
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [4, 0]
-    - period: 2 #7
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 4]
-      second_stroke_rel_offset: [0, -4]
-    - period: 2 #8
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #8
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #9
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #10
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #11
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #12
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [0, -6]
-    - period: 2 #13
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #14
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #15
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #16
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #17
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #18
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [0, -6]
-    - period: 2 #19
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #20
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #21
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #22
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #23
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #24
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #25
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #26
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [6, 0]
-    - period: 2 #27
-      hold_times: [0.01, 0.01]
-      first_stroke_rel_offset: [0, 6]
-      second_stroke_rel_offset: [0, -6]
+    # - period: 2 #4
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [4, 0]
+    # - period: 2 #5
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [4, 0]
+    # - period: 2 #6
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [4, 0]
+    # - period: 2 #7
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 4]
+    #   second_stroke_rel_offset: [0, -4]
+    # - period: 2 #8
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #8
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #9
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #10
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #11
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #12
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [0, -6]
+    # - period: 2 #13
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #14
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #15
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #16
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #17
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #18
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [0, -6]
+    # - period: 2 #19
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #20
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #21
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #22
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #23
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #24
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #25
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #26
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [6, 0]
+    # - period: 2 #27
+    #   hold_times: [0.01, 0.01]
+    #   first_stroke_rel_offset: [0, 6]
+    #   second_stroke_rel_offset: [0, -6]
 executor_type: h_shape_v2
