@@ -80,4 +80,4 @@ vision7:
   ip: 192.168.2.3
   mode:
     CAL_STEP_L_HIGH_L_O: 1
-    INNER_CORNER_OF_A_STEP: 24
+    INNER_CORNER_OF_A_STEP: 24 # Vshape 17-1, exposure=4, anti-reflection mode 4, capability=6
