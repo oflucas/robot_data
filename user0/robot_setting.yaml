@@ -94,4 +94,24 @@ robot14:
 group1:
   maker: 'robot_team'
   robots: ['robot11', 'robot12', 'robot13', 'robot14']
+robot15:
+  ip: 192.168.2.160
+  maker: 'rokae'
+  product: 'CR12'
+  arm: 'X600TV01935'
+  cab: 'C600TV00955'
+  payload: 3.0
+robot16:
+  ip: 192.168.2.160
+  maker: 'rokae'
+  product: 'CR12'
+  arm: 'X600TV01694'
+  cab: 'C600TV00946'
+  payload: 3.0
+robot17:
+  ip: 192.168.2.90
+  maker: 'cart'
+group2:
+  maker: 'robot_team'
+  robots: ['robot15', 'robot16', 'robot17']
 
