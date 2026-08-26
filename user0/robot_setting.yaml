@@ -113,5 +113,8 @@ robot17:
   maker: 'cart'
 group2:
   maker: 'robot_team'
-  robots: ['robot15', 'robot16', 'robot17']
+  robots: ['robot17', 'robot15', 'robot16']
+group3:
+  maker: 'robot_team'
+  robots: ['robot17', 'robot15']
 
