@@ -21,4 +21,4 @@ actions_param:
       hold_times: [0., 0., 0.3, 0.]
       first_stroke_rel_offset: [0, -4]
       second_stroke_rel_offset: [0, 4]
-executor_type: lateral-line
+executor_type: line-cart
