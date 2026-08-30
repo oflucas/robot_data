@@ -348,6 +348,13 @@ tool_group1:
   - tool13
   - tool00
 tool_group2:
+  description: Double side line welding with cart
   tools:
+  - tool00
   - tool15
   - tool16
+tool_group3:
+  description: One side line welding with cart
+  tools:
+  - tool00
+  - tool15
