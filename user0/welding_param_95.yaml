@@ -6,6 +6,7 @@ weld_length: 350.0
 safe_height: 30.0
 weld_speed: 5.0
 tolerance_factor_to_scan_step: 2.0
+align_rt: [-333.94503654678806, 868.4950512148957, -194.57761035674213, -0.8552087278392972, -0.02362365647414988, 0.11131352219862145]
 actions_offset: [0, 0]
 actions:
   - [1.0, 1.0, 45] #1
@@ -13,11 +14,13 @@ actions:
 actions_param:
   swing_list:
     - period: 1.3 #1
-      hold_times: [0.3, 0., 0.3, 0.]
+      real_period: 2.9
+      hold_times: [0., 0., 0., 0.]
       first_stroke_rel_offset: [5, 0]
       second_stroke_rel_offset: [0, 5]
     - period: 1.3 #2
-      hold_times: [0.3, 0., 0.3, 0.]
+      real_period: 2.9
+      hold_times: [0., 0., 0., 0.]
       first_stroke_rel_offset: [5, 0]
       second_stroke_rel_offset: [0, 5]
 executor_type: line-cart
