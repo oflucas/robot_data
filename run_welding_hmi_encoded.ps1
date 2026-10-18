@@ -8,6 +8,9 @@ Write-Host $exec_path
 Set-Location -Path $exec_path
 Write-Host "cd Directory: $(Get-Location)"
 
+# Force UTF-8 as default file encoding (Chinese Windows defaults to GBK).
+$env:PYTHONUTF8 = "1"
+
 python --version
 python -m robot.welding_hmi
 $name = Read-Host "Press Any Keys"

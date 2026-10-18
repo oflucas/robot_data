@@ -10,7 +10,7 @@ safe_height: 30.0
 weld_speed: 5.0
 is_left_side: False
 tolerance_factor_to_scan_step: 2.0
-align_rt: [286.33, 728.41, -284, -0.760091, -0.009774, 3.133564]
+align_rt: [393.2, 708.41, -264, -0.760091, -0.009774, 3.133564]
 actions_offset: [0, 0]
 actions:
   - [1.0, 1.0, 45] #1

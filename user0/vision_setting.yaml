@@ -81,7 +81,7 @@ vision7:
   mode:
     CAL_STEP_L_HIGH_L_O: 1 # Dummy..
     # outdated: Vshape 17-1, exposure=4, anti-reflection mode 4, capability=6
-    INNER_CORNER_OF_A_STEP: 2 # Inner corner 4-1, exposure=4, cam gain=255, line detect cap=4, rm line len=50
+    INNER_CORNER_OF_A_STEP: 2 # Inner corner 4-1, exposure=4, anti-reflection mode 1, cam gain=32, line detect cap=4, rm line len=50
 vision8:
   product_id: M620XRQ0002992
   product_typename: CXZK-X10-200

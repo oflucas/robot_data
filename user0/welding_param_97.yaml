@@ -1,0 +1,38 @@
+description: |
+  Cart-driven straight line weld on both sides at once (work95 left + right). Robot must be
+  connected as a robot_team of [cart, weld_robot1, weld_robot2], e.g. ['robot17', 'robot15', 'robot16']
+  (see build_line_cart_coordinator in line_cart_coordinator.py).
+  Merged from welding_param_95.yaml (left outer side, front robot robot15) and
+  welding_param_9501.yaml (left inner side, back robot robot16).
+  Top-level params are shared by both robots; robot_param[i] overrides them for the i-th welding
+  robot in the team (cart excluded), and its real_period_list fills actions_param.swing_list[k].real_period.
+  robot运动和小车运动不同时结束解决, 固定好焊接速度(行走速度)和摆动参数, 走一遍计时实际摆动周期T设置为real_period.
+  然后再观察运动,如果小车先于摆动停止, 那么应该减少总摆动次数, 微调加大T, 反之减少T.
+weld_length: 350.0
+safe_height: 30.0
+weld_speed: 5.0
+tolerance_factor_to_scan_step: 2.0
+actions_offset: [0, 0]
+actions:
+  - [1.0, 1.0, 42] #1
+  - [5.0, 5.0, 42] #2
+actions_param:
+  swing_list:
+    - period: 1.3 #1
+      hold_times: [0., 0., 0., 0.]
+      first_stroke_rel_offset: [5, 0]
+      second_stroke_rel_offset: [0, 5]
+    - period: 1.3 #2
+      hold_times: [0., 0., 0., 0.]
+      first_stroke_rel_offset: [5, 0]
+      second_stroke_rel_offset: [0, 5]
+robot_param:
+  - # 机器人1: front robot (robot15), left outer side.
+    is_left_side: True
+    align_rt: [-333.94503654678806, 868.4950512148957, -194.57761035674213, -0.8552087278392972, -0.02362365647414988, 0.11131352219862145]
+    real_period_list: [2.9, 2.9] # One per action layer.
+  - # 机器人2: back robot (robot16), left inner side.
+    is_left_side: False
+    align_rt: [393.2, 708.41, -264, -0.760091, -0.009774, 3.133564]
+    real_period_list: [2.7, 2.7] # One per action layer.
+executor_type: double-line-cart
