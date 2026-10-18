@@ -2,9 +2,13 @@ description: |
   Example for cart-driven straight line weld (work95). Robot must be connected as a
   robot_team whose first robot is the table cart and second is the welding robot
   (see build_line_welding_executor in line_welding_executor.py).
+  Note this is for left outer side welding using front robot (robot15)
+  robot运动和小车运动不同时结束解决, 固定好焊接速度(行走速度)和摆动参数, 走一遍计时实际摆动周期T设置为real_period.
+  然后再观察运动,如果小车先于摆动停止, 那么应该减少总摆动次数, 微调加大T, 反之减少T.
 weld_length: 350.0
 safe_height: 30.0
 weld_speed: 5.0
+is_left_side: True
 tolerance_factor_to_scan_step: 2.0
 align_rt: [-333.94503654678806, 868.4950512148957, -194.57761035674213, -0.8552087278392972, -0.02362365647414988, 0.11131352219862145]
 actions_offset: [0, 0]

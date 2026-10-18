@@ -102,7 +102,7 @@ robot15:
   cab: 'C600TV00955'
   payload: 3.0
 robot16:
-  ip: 192.168.2.160
+  ip: 192.168.2.162
   maker: 'rokae'
   product: 'CR12'
   arm: 'X600TV01694'
@@ -117,4 +117,7 @@ group2:
 group3:
   maker: 'robot_team'
   robots: ['robot17', 'robot15']
+group4:
+  maker: 'robot_team'
+  robots: ['robot17', 'robot16']
 

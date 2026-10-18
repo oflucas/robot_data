@@ -79,5 +79,13 @@ vision7:
   product_typename: CXZK-RBTA4N-DKH
   ip: 192.168.2.3
   mode:
-    CAL_STEP_L_HIGH_L_O: 1
-    INNER_CORNER_OF_A_STEP: 24 # Vshape 17-1, exposure=4, anti-reflection mode 4, capability=6
+    CAL_STEP_L_HIGH_L_O: 1 # Dummy..
+    # outdated: Vshape 17-1, exposure=4, anti-reflection mode 4, capability=6
+    INNER_CORNER_OF_A_STEP: 2 # Inner corner 4-1, exposure=4, cam gain=255, line detect cap=4, rm line len=50
+vision8:
+  product_id: M620XRQ0002992
+  product_typename: CXZK-X10-200
+  ip: 192.168.2.7
+  mode: # NOTE Set for X\Z direction in the config number! Otherwise z,x axis directions are not conventional.
+    CAL_STEP_L_HIGH_L_O: 1 # ax1(X)=1,ax2(Z)=0! STEP (left high) 3-1, exposure=5, cap=6, output high side 
+    INNER_CORNER_OF_A_STEP: 2 # ax1(X)=1,ax2(Z)=1! Outer corner rightmost 4-2, exposure=4, line detect cap=2, rm line len=0
