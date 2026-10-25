@@ -6,12 +6,14 @@ description: |
   welding_param_9501.yaml (left inner side, back robot robot16).
   Top-level params are shared by both robots; robot_param[i] overrides them for the i-th welding
   robot in the team (cart excluded), and its real_period_list fills actions_param.swing_list[k].real_period.
+  备注: 用于焊接小车左侧的双侧加强板
   robot运动和小车运动不同时结束解决, 固定好焊接速度(行走速度)和摆动参数, 走一遍计时实际摆动周期T设置为real_period.
   然后再观察运动,如果小车先于摆动停止, 那么应该减少总摆动次数, 微调加大T, 反之减少T.
 weld_length: 350.0
 safe_height: 30.0
 weld_speed: 5.0
 tolerance_factor_to_scan_step: 2.0
+lose_track_step_threshold: 5
 actions_offset: [0, 0]
 actions:
   - [1.0, 1.0, 42] #1
