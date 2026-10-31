@@ -13,6 +13,8 @@ description: |
 weld_length: 350.0
 safe_height: 30.0
 weld_speed: 5.0
+welding_config:
+  mode: io # Manual set 123A 18V, pulse mode.
 tolerance_factor_to_scan_step: 2.0
 lose_track_step_threshold: 5
 actions:
@@ -40,3 +42,44 @@ robot_param:
     real_period_list: [2.7, 2.7] # One per action layer.
     actions_offset: [-3, 0] # [offset_z, offset_y] added to every action layer of this robot.
 executor_type: double-line-cart
+
+# Toggle side sequence (HMI "切换侧"): moves the two welding robots one move at a time, in order.
+# Choosing right runs it forward (left side -> right side); choosing left runs it reversed (right -> left).
+# So each robot's FIRST move should be its left-side work pose and its LAST move its right-side work pose.
+# robot: 1-based welding robot index in the team (cart excluded). Move format is the same as fetch_sequence.
+# TODO: dummy values, replace with real poses.
+toggle_side_moves:
+  # Robot 1 raises up from left-side work pose
+  - robot: 1
+    type: "linear"
+    position: [385.1, -408, 759, 179.7, -0.9, 45.3]  # [x,y,z,rx,ry,rz] in mm/degrees
+    speed: 100 # mm/s
+  # Robot 2 raises up from left-side work pose
+  - robot: 2
+    type: "linear"
+    position: [385.1, -408, 759, 179.7, -0.9, 45.3]  # [x,y,z,rx,ry,rz] in mm/degrees
+    speed: 100 # mm/s
+  # Robot 1 swings over to the right side
+  - robot: 1
+    type: "joint"
+    angles: [-15, 4.1, -69, 182, 84, 274]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 1
+    type: "joint"
+    angles: [-71, -23, 11.6, 179.66, -145.5, 243]  # Joint angles in degrees
+    speed: 20 # degree/s
+  # Robot 2 swings over to the right side
+  - robot: 2
+    type: "joint"
+    angles: [-33, 19, -54, 181, 107, 282]  # Joint angles in degrees
+    speed: 20 # degree/s
+  # Robot 1 drops down to right-side work pose
+  - robot: 1
+    type: "linear"
+    position: [-256.6, 323.5, 867.5, 179.7, -0.1, 45.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+    speed: 100 # mm/s
+  # Robot 2 drops down to right-side work pose
+  - robot: 2
+    type: "linear"
+    position: [-256.6, 323.5, 867.5, 179.7, -0.1, 45.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+    speed: 100 # mm/s

@@ -8,6 +8,8 @@ description: |
 weld_length: 350.0
 safe_height: 30.0
 weld_speed: 5.0
+welding_config:
+  mode: io # Manual set 123A 18V, pulse mode.
 is_left_side: True
 tolerance_factor_to_scan_step: 2.0
 lose_track_step_threshold: 5
