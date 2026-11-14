@@ -53,6 +53,7 @@ executor_type: double-line-cart
 # So each robot's FIRST move should be its left-side work pose and its LAST move its right-side work pose.
 # robot: 1-based welding robot index in the team (cart excluded). Move format is the same as fetch_sequence.
 # TODO: dummy values, replace with real poses.
+work_side: right
 toggle_side_moves:
   # Robot 1 raises up from left-side work pose
   - robot: 1
