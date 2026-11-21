@@ -13,6 +13,7 @@ description: |
 weld_length: 350.0
 safe_height: 30.0
 weld_speed: 4.0
+time_to_weld_at_end: 1.5 # s, hold the arc at the end of the weld trajectory.
 welding_config:
   mode: io # Manual set 123A 18V, pulse mode.
 tolerance_factor_to_scan_step: 2.0
