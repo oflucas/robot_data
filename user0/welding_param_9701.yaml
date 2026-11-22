@@ -56,37 +56,97 @@ executor_type: double-line-cart
 # TODO: dummy values, replace with real poses.
 work_side: right
 toggle_side_moves:
-  # Robot 1 raises up from left-side work pose
-  - robot: 1
+  - robot: 2 # Robot 2 start position
     type: "linear"
-    position: [385.1, -408, 759, 179.7, -0.9, 45.3]  # [x,y,z,rx,ry,rz] in mm/degrees
+    position: [393.192, 708.386, -164.019, -43.549, -0.561, 179.538]  # [x,y,z,rx,ry,rz] in mm/degrees
     speed: 100 # mm/s
-  # Robot 2 raises up from left-side work pose
-  - robot: 2
+  - robot: 2 # Robot 2 more backwards
     type: "linear"
-    position: [385.1, -408, 759, 179.7, -0.9, 45.3]  # [x,y,z,rx,ry,rz] in mm/degrees
+    position: [347.913, 654.565, -164.056, -43.547, -0.564, 179.532]  # [x,y,z,rx,ry,rz] in mm/degrees
     speed: 100 # mm/s
-  # Robot 1 swings over to the right side
-  - robot: 1
+  - robot: 2 # rotate end tool 90
     type: "joint"
-    angles: [-15, 4.1, -69, 182, 84, 274]  # Joint angles in degrees
+    angles: [-285.471, 27.995, -109.069, -1.143, -43.761, -16.846]  # Joint angles in degrees
     speed: 20 # degree/s
-  - robot: 1
+  - robot: 2 # rotate end tool 180
     type: "joint"
-    angles: [-71, -23, 11.6, 179.66, -145.5, 243]  # Joint angles in degrees
+    angles: [-285.471, 27.995, -109.07, -1.141, -43.761, 77.648]  # Joint angles in degrees
     speed: 20 # degree/s
-  # Robot 2 swings over to the right side
-  - robot: 2
+  - robot: 2 # fold end tool
     type: "joint"
-    angles: [-33, 19, -54, 181, 107, 282]  # Joint angles in degrees
+    angles: [-285.471, 27.999, -109.078, -10.296, -141, 77.648]  # Joint angles in degrees
     speed: 20 # degree/s
-  # Robot 1 drops down to right-side work pose
-  - robot: 1
+  - robot: 2 # flip joint 1,2
+    type: "joint"
+    angles: [-252.063, -25.741, -109.055, -10.301, -141, 77.648]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 2 # flip joint 3 half way
+    type: "joint"
+    angles: [-252.063, -25.728, -162.655, -10.293, -141, 77.647]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 2 # rotate joint 4 to avoid collision
+    type: "joint"
+    angles: [-252.063, -25.727, -162.66, 29.706, -140.678, 77.649]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 2 # flip joint 3 complete
+    type: "joint"
+    angles: [-252.063, -25.683, -251.816, 29.721, -140.648, 77.648]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 2 # unfold tool partly
+    type: "joint"
+    angles: [-252.063, -25.679, -251.824, 29.718, -53.405, 77.648]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 2  # unfold tool fully
+    type: "joint"
+    angles: [-252.063, -25.684, -251.817, 29.723, 33.512, 77.648]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 2  # make tool orientation good at right
+    type: "joint"
+    angles: [-251.77, -34.156, -280.774, 2.606, 67.056, 109.851]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 2  # make room for robot 1
     type: "linear"
-    position: [-256.6, 323.5, 867.5, 179.7, -0.1, 45.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+    position: [170.062, -823.449, -21.837, -43.367, -3.195, 0.158]  # [x,y,z,rx,ry,rz] in mm/degrees
     speed: 100 # mm/s
-  # Robot 2 drops down to right-side work pose
-  - robot: 2
+  - robot: 1 ################## robot 1 start position
     type: "linear"
-    position: [-256.6, 323.5, 867.5, 179.7, -0.1, 45.5]  # [x,y,z,rx,ry,rz] in mm/degrees
+    position: [-333.927, 868.426, -94.625, -49.005, -1.354, 6.377]  # [x,y,z,rx,ry,rz] in mm/degrees
+    speed: 100 # mm/s
+  - robot: 1 # start position in angle (reverse needs it)
+    type: "joint"
+    angles: [-78.635, -39.344, -281.435, 0.058, 63, -85.688]  # Joint angles in degrees
+  - robot: 1 # fold tool
+    type: "joint"
+    angles: [-78.635, -39.344, -281.435, 0.058, 146.153, -85.688]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 1 # flip joint 3 half way
+    type: "joint"
+    angles: [-78.635, -39.394, -179.239, 0.031, 146.118, -85.688]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 1 # flip joint 3 full
+    type: "joint"
+    angles: [-78.635, -39.394, -85.224, 0.031, 146.094, -85.687]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 1 # flip joint 1,2
+    type: "joint"
+    angles: [-86.221, 33.77, -85.212, 0.029, 146.11, -85.687]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 1 # unfold tool half and rotate joint 6 90
+    type: "joint"
+    angles: [-86.221, 33.764, -85.204, 0.029, 31.019, 4.376]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 1 # fully flipped
+    type: "joint"
+    angles: [-86.221, 33.769, -85.213, 0.03, -58.909, 95.407]  # Joint angles in degrees
+    speed: 20 # degree/s
+  - robot: 1 # go to ready align position
+    type: "linear"
+    position: [-251.861, -983.222, -134.976, -49.635, -1.073, -179.024] # [x,y,z,rx,ry,rz] in mm/degrees
+    speed: 100 # mm/s
+  - robot: 2  # make room for robot 1 (reverse move needs it)
+    type: "linear"
+    position: [170.062, -823.449, -21.837, -43.367, -3.195, 0.158]  # [x,y,z,rx,ry,rz] in mm/degrees
+  - robot: 2 ######### go to ready align position
+    type: "linear"
+    position: [527.154, -666.855, -215.782, -43.366, -3.193, 0.158] # [x,y,z,rx,ry,rz] in mm/degrees
     speed: 100 # mm/s
