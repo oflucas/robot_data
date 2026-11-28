@@ -10,10 +10,10 @@ description: |
   备注: 用于焊接小车右侧的双侧加强板
   robot运动和小车运动不同时结束解决, 固定好焊接速度(行走速度)和摆动参数, 走一遍计时实际摆动周期T设置为real_period.
   然后再观察运动,如果小车先于摆动停止, 那么应该减少总摆动次数, 微调加大T, 反之减少T.
-weld_length: 350.0
+weld_length: 300.0
 safe_height: 30.0
 weld_speed: 4.0
-time_to_weld_at_end: 1.5 # s, hold the arc at the end of the weld trajectory.
+time_to_weld_at_end: 1 # s, hold the arc at the end of the weld trajectory.
 welding_config:
   mode: io # Manual set 123A 18V, pulse mode.
 tolerance_factor_to_scan_step: 2.0
@@ -40,13 +40,15 @@ robot_param:
   - # 机器人1: front robot (robot15), right outer side.
     is_left_side: False
     align_rt: [-334, -917, -202, -0.8927359124, 0.0101578162, -3.0756017546]
-    real_period_list: [2.6, 2.6, 2.6] # One per action layer.
-    actions_offset: [0, 0] # [offset_z, offset_y] added to every action layer of this robot.
+    real_period_list: [2.78, 2.78, 2.78] # One per action layer.
+    # The pin should be calibrated at 25mm, but it is cali.ed at 20mm, then here we need to compensate [3, 3]
+    actions_offset: [3, 3] # [offset_z, offset_y] added to every action layer of this robot.
   - # 机器人2: back robot (robot16), right inner side.
     is_left_side: True
     align_rt: [456, -711, -261.4, -0.819659, -0.026843, -0.018972]
-    real_period_list: [2.6, 2.6, 2.6] # One per action layer.
-    actions_offset: [0, 0] # [offset_z, offset_y] added to every action layer of this robot.
+    real_period_list: [2.78, 2.78, 2.78] # One per action layer.
+    # The pin should be calibrated at 25mm, but it is cali.ed at 20mm, then here we need to compensate [3, 3]
+    actions_offset: [3, 3] # [offset_z, offset_y] added to every action layer of this robot.
 executor_type: double-line-cart
 
 # Toggle side sequence (HMI "切换侧"): moves the two welding robots one move at a time, in order.
@@ -115,6 +117,7 @@ toggle_side_moves:
   - robot: 1 # start position in angle (reverse needs it)
     type: "joint"
     angles: [-78.635, -39.344, -281.435, 0.058, 63, -85.688]  # Joint angles in degrees
+    speed: 20 # degree/s
   - robot: 1 # fold tool
     type: "joint"
     angles: [-78.635, -39.344, -281.435, 0.058, 146.153, -85.688]  # Joint angles in degrees
