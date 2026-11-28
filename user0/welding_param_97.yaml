@@ -147,6 +147,7 @@ toggle_side_moves:
   - robot: 2  # make room for robot 1 (reverse move needs it)
     type: "linear"
     position: [170.062, -823.449, -21.837, -43.367, -3.195, 0.158]  # [x,y,z,rx,ry,rz] in mm/degrees
+    speed: 100 # mm/s
   - robot: 2 ######### go to ready align position
     type: "linear"
     position: [527.154, -666.855, -215.782, -43.366, -3.193, 0.158] # [x,y,z,rx,ry,rz] in mm/degrees

@@ -46,7 +46,7 @@ robot_param:
     is_left_side: True
     align_rt: [456, -711, -261.4, -0.819659, -0.026843, -0.018972]
     real_period_list: [2.6, 2.6, 2.6] # One per action layer.
-    actions_offset: [-3, 0] # [offset_z, offset_y] added to every action layer of this robot.
+    actions_offset: [0, 0] # [offset_z, offset_y] added to every action layer of this robot.
 executor_type: double-line-cart
 
 # Toggle side sequence (HMI "切换侧"): moves the two welding robots one move at a time, in order.
@@ -145,6 +145,7 @@ toggle_side_moves:
     speed: 100 # mm/s
   - robot: 2  # make room for robot 1 (reverse move needs it)
     type: "linear"
+    speed: 100 # mm/s
     position: [170.062, -823.449, -21.837, -43.367, -3.195, 0.158]  # [x,y,z,rx,ry,rz] in mm/degrees
   - robot: 2 ######### go to ready align position
     type: "linear"
